@@ -1,0 +1,18 @@
+{
+  "repository": "KitaKen1/reversible-finsler-spheres",
+  "branch": "main",
+  "run_id": 39703676590,
+  "job_id": 119578542066,
+  "code_commit": "be3aaf6949fd931d61aef749ed59207fc6ef21a6",
+  "url": "https://github.com/KitaKen1/reversible-finsler-spheres/actions/runs/39703676590",
+  "initial_observed_status": "in_progress",
+  "initial_observed_utc": "2026-10-22T01:07:02Z",
+  "source_inventory_check": "pass",
+  "public_success_claimed": false,
+  "build_mode": "first public run; no cross-repository project cache",
+  "target": "ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics",
+  "prior_successful_private_run": 39700419746,
+  "fc_source_sha256": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+  "core_source_manifest_sha256": "ed034e9df2c7b4969b49aa64b5a0bbf0a50e3223c4af97de5f06b9ef38eaaba4",
+  "proof_scope": "n >= 3; n = 2 is a literature result"
+}

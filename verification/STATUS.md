@@ -6,12 +6,17 @@ replay timeout is retained. Earlier general proof results remain historical evid
 
 ## Public main verification
 
-The verified proof package is being published to
-[reversible-finsler-spheres](https://github.com/KitaKen1/reversible-finsler-spheres).
+The verified proof package was published to
+[reversible-finsler-spheres](https://github.com/KitaKen1/reversible-finsler-spheres)
+on public `main`, code commit `be3aaf6949fd931d61aef749ed59207fc6ef21a6`.
 The exact-target workflow now runs on pushes to `main`, using the same
 mathematical sources, dependency pins, memory settings, Comparator and landrun
-as the successful private run below. The first public run has no project cache;
-a public-run success is not claimed yet.
+as the successful private run below. The first public run,
+[39703676590](https://github.com/KitaKen1/reversible-finsler-spheres/actions/runs/39703676590),
+started on 22 October 2026 at 01:05 UTC (10:05 JST). Its source inventory check
+passed; the initial observation records an in-progress run with no project
+cache. See the live run for its current result. A public-run success is not
+claimed by this initial record.
 
 ## Hosted exact FC target: PASS
 

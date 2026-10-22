@@ -490,8 +490,9 @@ imports an FC placeholder or asserts the remaining geometric construction.
 ### Lean Comparator check
 
 The [public `main` workflow](https://github.com/KitaKen1/reversible-finsler-spheres/actions/workflows/fc-target.yml)
-builds and checks this exact target on every push to `main`. The initial public
-run has no project cache and is separate from the private sandbox result below.
+builds and checks this exact target on every push to `main`. The status badge
+and linked workflow show the current public result. The archived private
+sandbox result below records the earlier verification.
 
 The exact n ≥ 3 FC target passed the full
 [hosted workflow](https://github.com/KitaKen1/ci-test-sandbox/actions/runs/39700419746)
@@ -571,8 +572,8 @@ Lean declaration remains statement-only.
 ### CI status
 
 The [exact-target workflow](.github/workflows/fc-target.yml) verifies the n ≥ 3
-FC target in the private
-[CI sandbox](https://github.com/KitaKen1/ci-test-sandbox/actions).
+FC target on public `main` in
+[GitHub Actions](https://github.com/KitaKen1/reversible-finsler-spheres/actions/workflows/fc-target.yml).
 It builds the proof from source, checks its transitive axioms and runs the
 unmodified pinned Comparator CLI with built-in kernel replay. Its conclusion
 must be read from the individual hosted run. The broader historical
@@ -581,8 +582,9 @@ must be read from the individual hosted run. The broader historical
 ### Logs and archives
 
 The exact-target workflow retains build and Comparator logs for 90 days.
-Hosted logs require access to the private sandbox.
-The included evidence is the [local log collection](verification/local/),
+Public run logs are accessible from this repository's Actions page. The
+[archived successful sandbox logs](verification/ci/39700419746/) are also
+included here. Additional evidence is in the [local log collection](verification/local/),
 with outcomes and hashes recorded in the
 [receipt](verification/local/receipt.json) and
 [FC receipt](verification/local/fc-four-statements-receipt.json).
@@ -593,27 +595,24 @@ Install [elan](https://github.com/leanprover/elan). From this repository:
 
 ```bash
 python3 scripts/check-package.py
-cd lean
-lake exe cache get
-cd ..
-python3 scripts/build-serial.py --project lean Challenge
-python3 scripts/build-serial.py --project lean
-python3 scripts/check-fc-statements.py --fc-source /path/to/formal-conjectures
+python3 scripts/fetch-target-cache.py --project lean
+python3 scripts/build-serial.py --project lean FCExactChallenge
+python3 scripts/build-serial.py --project lean --warm-target Finsler.Residual.FillRel FCExactSolution FCExactAudit
 ```
 
 The serial builder compiles the local import closure one module at a time,
 with 4 GiB per Lean process and two Lean threads. A normal
 `cd lean && lake build` also builds the solution, but may schedule more
-concurrent work. The FC checker reuses the build and removes its small temporary
-output directory.
+concurrent work. Dependency caches are fetched for the selected imports. The
+separate FC metadata/readback check can be run with
+`python3 scripts/check-fc-statements.py --fc-source /path/to/formal-conjectures`;
+it reuses the build and removes its temporary output directory.
 
 For the version without Comparator:
 
 ```bash
-cd leanWithoutComparator
-lake exe cache get
-cd ..
-python3 scripts/build-serial.py --project leanWithoutComparator
+python3 scripts/fetch-target-cache.py --project leanWithoutComparator FCExactSolution FCExactAudit
+python3 scripts/build-serial.py --project leanWithoutComparator FCExactSolution FCExactAudit
 ```
 
 Each Lean directory can be copied out as a standalone project. Its pinned
@@ -621,12 +620,12 @@ Each Lean directory can be copied out as a standalone project. Its pinned
 `Finsler/` modules in each snapshot; the default target builds the solution's
 import closure rather than every historical module.
 
-On Linux, after building the reference and solution and installing Go 1.24
-or newer, run the full Comparator path from the repository root:
+On Linux, after building the reference and solution and installing Go 1.25
+or newer, run the exact FC Comparator path from the repository root:
 
 ```bash
 bash lean/comparator/install-tools.sh
-bash lean/comparator/run-check.sh
+bash lean/comparator/run-fc-check.sh
 ```
 
 See the [verification guide](lean/comparator/README.md) for pinned tools,
