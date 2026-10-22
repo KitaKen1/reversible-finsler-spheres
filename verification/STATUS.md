@@ -4,7 +4,7 @@ Updated: **22 October 2026**. The hosted exact-FC-target workflow has passed. Lo
 hosted Linux CI outcomes are recorded separately; the current local kernel
 replay timeout is retained. Earlier general proof results remain historical evidence.
 
-## Public main verification
+## Public main exact FC target: PASS
 
 The verified proof package was published to
 [reversible-finsler-spheres](https://github.com/KitaKen1/reversible-finsler-spheres)
@@ -13,12 +13,38 @@ The exact-target workflow now runs on pushes to `main`, using the same
 mathematical sources, dependency pins, memory settings, Comparator and landrun
 as the successful private run below. The first public run,
 [39703676590](https://github.com/KitaKen1/reversible-finsler-spheres/actions/runs/39703676590),
-started on 22 October 2026 at 01:05 UTC (10:05 JST). Its source inventory check
-passed; the initial observation records an in-progress run with no project
-cache. See the live run for its current result. A public-run success is not
-claimed by this initial record.
+completed successfully on **22 October 2026 at 05:30 UTC (14:30 JST)** on Ubuntu
+24.04. All hosted steps passed.
 
-## Hosted exact FC target: PASS
+| Public hosted check | Result |
+| --- | --- |
+| Sealed sources and exact FC definition extraction | PASS |
+| Independent reference build | PASS |
+| Project source build and transitive axiom audit | PASS; no restored project cache, pinned dependency caches used |
+| Pinned Comparator, lean4export and real landrun installation | PASS |
+| Unmodified upstream Comparator CLI: target and dependent definitions | PASS |
+| Built-in Lean kernel replay | PASS: `Lean default kernel accepts the solution` |
+| Post-Comparator exact target axiom audit | PASS: only `propext`, `Classical.choice`, `Quot.sound` |
+
+The [public Comparator log](ci/39703676590/fc-target-comparator.log) ends with
+`Your solution is okay!`; the [axiom log](ci/39703676590/fc-target-axioms.log)
+records `ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics` and
+the three permitted axioms. The fresh project source-build step took **14,685
+seconds (4 h 4 min 45 s)**. The combined Comparator/post-audit step took **951
+seconds (15 min 51 s)**; this is not a kernel-only duration. Mathlib and other
+pinned dependency caches were used, so this is not a clean dependency rebuild.
+
+The [public receipt](ci/39703676590/receipt.json) records the tested code commit,
+checker pins, source hashes and every archived artifact file. The downloaded
+artifact ZIP matched GitHub's SHA-256 digest before extraction. The
+[initial observation](ci/public-main-initial-run.json) remains a historical
+record of the run while it was still in progress.
+
+The certified statement is the complete **n ≥ 3** FC target. The n = 2 case
+remains a literature result outside this Lean proof scope. No independent
+kernel implementation was run.
+
+## Earlier private sandbox verification: PASS
 
 [Run 39700419746](https://github.com/KitaKen1/ci-test-sandbox/actions/runs/39700419746)
 completed successfully on **22 October 2026, 00:54 UTC (09:54 JST)**, testing code
@@ -171,7 +197,7 @@ and the four intended FC `sorry` warnings. The original Kenta Kitamura header
 is retained by author preference. Thus successful elaboration is recorded;
 a warning-free FC style check or upstream acceptance is not claimed.
 
-## Checks actually executed
+## Earlier local checks actually executed
 
 | Check | Result | Evidence |
 | --- | --- | --- |
@@ -200,9 +226,10 @@ The two intentional challenge placeholders and the four FC draft placeholders
 are excluded from the solution dependency graph. No other proof placeholders
 or project axiom declarations were found by the publication source scan.
 
-The separate kernel replay attempt did not complete within its 180-second
-budget, which includes parsing the exported environment. No successful fresh
-kernel replay is claimed, and the timeout is not a mathematical rejection.
+That earlier local kernel replay attempt did not complete within its 180-second
+budget, which includes parsing the exported environment. This attempt is
+recorded as a timeout, not a mathematical rejection. The later public Linux CI
+passed built-in kernel replay, as recorded above.
 
 ## Prose correspondence
 

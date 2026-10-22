@@ -1,0 +1,34 @@
+Cloning into '/home/runner/work/_temp/finsler-comparator-tools/comparator'...
+HEAD is now at fd5d5bc chore: bump toolchain to v4.35.0-rc3 (#94)
+Cloning into '/home/runner/work/_temp/finsler-comparator-tools/lean4export'...
+HEAD is now at 66f1fb4 chore: bump toolchain to v4.35.0-rc3 (#53)
+Cloning into '/home/runner/work/_temp/finsler-comparator-tools/landrun'...
+HEAD is now at 811cfff Update README.md
+info: lean4export: materializing new dependency
+info: lean4export: fetching revision '66f1fb4bc256072069767fce52d39480e4524869' from https://github.com/leanprover/lean4export
+info: lean4export: checking out revision '66f1fb4bc256072069767fce52d39480e4524869'
+✔ [1/4] Built Comparator.Util (271ms)
+✔ [5/16] Built Comparator.Util:c.o (134ms)
+✔ [6/16] Built Export.Parse (1.6s)
+✔ [7/16] Built Comparator.Axioms (486ms)
+✔ [8/16] Built Comparator.Axioms:c.o (300ms)
+✔ [9/16] Built Comparator.Compare (549ms)
+✔ [10/16] Built Comparator.Compare:c.o (404ms)
+✔ [11/16] Built Comparator (291ms)
+✔ [12/16] Built Comparator:c.o (68ms)
+✔ [13/16] Built Export.Parse:c.o (3.4s)
+✔ [14/16] Built Main (2.5s)
+✔ [15/16] Built Main:c.o (915ms)
+✔ [16/16] Built comparator:exe (1.3s)
+Build completed successfully (16 jobs).
+✔ [2/6] Built Export (3.2s)
+✔ [3/6] Built Main (943ms)
+✔ [4/6] Built Main:c.o (199ms)
+✔ [5/6] Built Export:c.o (2.3s)
+✔ [6/6] Built lean4export:exe (962ms)
+Build completed successfully (6 jobs).
+go: downloading github.com/urfave/cli/v3 v3.6.2
+go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+go: downloading golang.org/x/sys v0.40.0
+go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
+Tools installed in /home/runner/work/_temp/finsler-comparator-tools

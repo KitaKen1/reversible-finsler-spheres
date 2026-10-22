@@ -133,11 +133,11 @@ the main lemmas. Fix a metric $F$, put $m=n-1\ge2$, and work over
 $\mathbb F_2$. Let $\Lambda=H^1(S^1,S^n)$ and identify $M=S^n$ with the constant
 loops. Write
 
-$$
+```math
 E_F(\gamma)=\int_0^1 F(\gamma,\dot\gamma)^2\,dt,
-\qquad X_a=\{\gamma:\sqrt{E_F(\gamma)}<a\},
-\qquad L_a=\{\gamma:\operatorname{length}_F(\gamma)<a\}.
-$$
+\qquad X_a=\{\gamma:\sqrt{E_F(\gamma)}\lt a\},
+\qquad L_a=\{\gamma:\mathrm{length}_F(\gamma)\lt a\}.
+```
 
 We use positive levels, so $M\subset X_a$. Reversibility makes loop reversal
 $R\gamma(t)=\gamma(-t)$ an involution of these pairs. Suppose, for a
@@ -150,10 +150,10 @@ a *regular cut* is a positive number outside $\mathcal C$.
 **1. Obtain a common spectral rate with bounded error.** The loop-space
 construction supplies indexed homology and Goresky–Hingston cohomology towers
 
-$$
+```math
 \Theta_r\in H_{n+2(r+1)m}(\Lambda),
 \qquad \eta_r\in H^{(2r+1)m}(\Lambda),\qquad r\ge0.
-$$
+```
 
 Let $\tau_r$ be the infimum of the length levels carrying $\Theta_r$, and let
 $\ell_r$ be the supremum of the levels on which $\eta_r$ restricts to zero.
@@ -165,18 +165,18 @@ The finiteness assumption improves this asymptotic statement to a uniform
 error bound. Local index estimates give a finite set of slopes $S$ and a
 constant $A$ such that, for some $s_r\in S$,
 
-$$
+```math
 \big|(2r+1)m-s_r\ell_r\big|\le A.
-$$
+```
 
 Dividing by $\ell_r$ shows $s_r\to\alpha:=2m/\beta$. A convergent sequence in
 a finite set is eventually constant. Enlarging a constant to cover the first
 finitely many terms therefore gives
 
-$$
+```math
 (r+1)\beta-C\le\ell_r\le\tau_r\le(r+2)\beta,
 \qquad 0\le\tau_r-\ell_r\le\beta+C.
-$$
+```
 
 This bounded difference is what makes the later length loss independent of
 the power $r$. See [GHSlope.lean](lean/Finsler/Residual/GHSlope.lean), especially
@@ -204,20 +204,20 @@ filling and the local crossing estimates then kill the cut with uniform cost.
 The filtered cut–join identity gives, after mapping all terms to a common
 sublevel,
 
-$$
+```math
 x=1*x=(c_rS_r)*x=(c_rx)*S_r=0.
-$$
+```
 
 Here $*$ is the loop product, of degree $-n$. For low degrees, first multiply
 by a sufficiently high $S_r$, apply the high-degree result, and use the
 filtered product–cut identity to recover $x$. The result is a constant
 $D\ge0$, independent of $a$, $q$ and $x$, such that
 
-$$
+```math
 x\in\ker\big(H_q(L_a)\longrightarrow H_q(\Lambda)\big)
 \quad\Longrightarrow\quad
 x\longmapsto0\text{ in }H_q(L_{a+D}).
-$$
+```
 
 The filtered unit construction is in
 [UFData.lean](lean/Finsler/Residual/UFData.lean); the displayed four-term
@@ -237,10 +237,10 @@ relative class vanishes on $M$, so it lifts to $H^q(\Lambda,M)$; injectivity
 identifies its restriction with the desired relative class. Thus, for large
 enough $a$ and $b\ge a+D$,
 
-$$
-\operatorname{im}\big(H^q(X_b,M)\to H^q(X_a,M)\big)
-=\operatorname{im}\big(H^q(\Lambda,M)\to H^q(X_a,M)\big).
-$$
+```math
+\mathrm{im}\big(H^q(X_b,M)\to H^q(X_a,M)\big)
+=\mathrm{im}\big(H^q(\Lambda,M)\to H^q(X_a,M)\big).
+```
 
 The spectral estimates also apply to the finitely many residue families
 generating ordinary loop-space cohomology. GH multiplication supplies the
@@ -249,12 +249,12 @@ dual homology classes for the nonvanishing bound. Consequently, for constants
 $c_1,a_0$ and all $a\ge a_0$, ordinary restriction
 $r_a^q:H^q(\Lambda,M)\to H^q(X_a,M)$ satisfies
 
-$$
+```math
 \begin{aligned}
-c_1<q<\alpha a-c_1&\quad\Longrightarrow\quad r_a^q\text{ is injective},\\
-q>\alpha a+c_1&\quad\Longrightarrow\quad r_a^q=0.
+c_1\lt q\lt \alpha a-c_1&\quad\Longrightarrow\quad r_a^q\text{ is injective},\\
+q\gt \alpha a+c_1&\quad\Longrightarrow\quad r_a^q=0.
 \end{aligned}
-$$
+```
 
 These are the precise filling and resonance hypotheses assembled in
 [FillRel.lean](lean/Finsler/Residual/FillRel.lean). The duality argument is in
@@ -266,18 +266,18 @@ and [HRBridge.lean](lean/Finsler/Residual/HRBridge.lean).
 $B^q=H_R^q(\Lambda,M)$ and $B_a^q=H_R^q(X_a,M)$, where $H_R$ denotes Borel
 cohomology for reversal, and let $\rho_a^q:B^q\to B_a^q$ be restriction.
 Let $w\in H^1(B\mathbb Z_2;\mathbb F_2)$ be the equivariant parameter, and
-let $e=\operatorname{ev}_0^*[S^n]^*$ be the degree-$n$ evaluation class.
+let $e=\mathrm{ev}_0^*[S^n]^*$ be the degree-$n$ evaluation class.
 
 The round-sphere computation, which determines the topology of the full loop
 space independently of $F$, gives $w^nB^*=0$ and spanning bottom and top
 classes $b_q,t_q$ in each degree. For a distinguished set $\mathcal O$ of
 odd-stage bottom degrees,
 
-$$
+```math
 t_{q+n}=e\smile b_q\quad(q\in\mathcal O),
 \qquad q_j=(4j+1)(n-1)\in\mathcal O,
 \qquad b_{q_j}\ne0.
-$$
+```
 
 The stage label is odd; the integer $q_j$ need not be odd. Every bottom class,
 and every top class outside the displayed pairing, lifts to the equivariant
@@ -288,13 +288,13 @@ will enter the doubling count.
 
 The Gysin sequence, uniform relative filling and $w$-nilpotence transfer the
 ordinary resonance bands to the reflection groups. After enlarging the margin,
-there are $C'>0$ and $q_0$ such that, for $q\ge q_0$ and $a>0$,
+there are $C'\gt 0$ and $q_0$ such that, for $q\ge q_0$ and $a\gt 0$,
 
-$$
-q<\alpha a-C'\ \Longrightarrow\ \rho_a^q\text{ is injective},
+```math
+q\lt \alpha a-C'\ \Longrightarrow\ \rho_a^q\text{ is injective},
 \qquad
-q>\alpha a+C'\ \Longrightarrow\ \rho_a^q=0.
-$$
+q\gt \alpha a+C'\ \Longrightarrow\ \rho_a^q=0.
+```
 
 See `RoundYTop.stage13` and `RoundYTop.basis_w_nil` in
 [RoundYTop.lean](lean/Finsler/Geometry/RoundYTop.lean), and
@@ -303,22 +303,22 @@ See `RoundYTop.stage13` and `RoundYTop.basis_w_nil` in
 **5. Bound the classes at a cut that do not extend globally.** At a regular
 cut define the nonnegative integer
 
-$$
-T(a)=\sum_q\dim_{\mathbb F_2}\operatorname{coker}(\rho_a^q).
-$$
+```math
+T(a)=\sum_q\dim_{\mathbb F_2}\mathrm{coker}(\rho_a^q).
+```
 
 The sum is finite. Local index estimates confine changes in ordinary
 cohomology to fixed-width bands around finitely many lines $q=sa$.
 Filling and the Gysin sequence imply that, away from these bands, either
 $B_a^q=0$ or multiplication by $w$ is bijective on the cokernels throughout
-a degree interval $[g_0,g_0+14t]$ with $t\ge\delta a$, for a fixed $\delta>0$.
+a degree interval $[g_0,g_0+14t]$ with $t\ge\delta a$, for a fixed $\delta\gt 0$.
 
 A nonzero cokernel class in such an interval would therefore generate a long
 nonzero $w$-string. The rank-counting lemma for this string gives
 
-$$
+```math
 2t^2\le K_0N_F(2a),\qquad N_F(2a)\le K_1(1+2a),
-$$
+```
 
 where $N_F(2a)$ counts critical levels up to $2a$ and $K_0,K_1$ are independent
 of $a,t$. The first inequality comes from summing the changes of the
@@ -345,10 +345,10 @@ Half-period translation fixes the doubled loops: its fixed set in $X_a$
 identifies with $X_{a/2}$. The Gysin rank identities for this action, together
 with the global lifts and their $U$-torsion, give the doubling inequality
 
-$$
+```math
 T(a)-T(a/2)\ \ge\!
 \sum_{q\in\mathcal O}\big(\varepsilon_q(a)-p_q(a)\big)\ \ge0
-$$
+```
 
 at every regular cut $a$; only finitely many summands are nonzero.
 In particular, equality $T(a)=T(a/2)$ forces
@@ -369,11 +369,11 @@ $T(x)=T(x/2)$ throughout the regular points of that interval.
 
 The degrees $q_j=(4j+1)(n-1)$ have fixed spacing, while the width of
 $2^k[u,v]$ tends to infinity. For large $k$, choose $q=q_j\ge q_0$ and regular
-cuts $a<b$ in that interval with
+cuts $a\lt b$ in that interval with
 
-$$
-\alpha a+C'<q<\alpha b-C'.
-$$
+```math
+\alpha a+C'\lt q\lt \alpha b-C'.
+```
 
 Detection gives $\rho_a^q(b_q)=0$ and $\rho_b^q(b_q)\ne0$. There are only
 finitely many critical levels between $a$ and $b$, so some single crossing
@@ -387,9 +387,9 @@ the single crossing near its critical loops, where evaluation avoids that
 point. The sphere's top class restricts to zero on the punctured sphere, so
 $e$ acts as zero on this relative crossing group. Naturality then gives
 
-$$
+```math
 e\smile\rho_{b'}^q(b_q)=0.
-$$
+```
 
 Thus $\varepsilon_q(b')=1$ but $p_q(b')=0$, contradicting the equality case
 of doubling on the maximal-defect interval. This disproves finiteness of
@@ -440,8 +440,9 @@ files sometimes call the assertion “unproved”; those comments predate
 
 The local checks used Lean `v4.35.0-rc3` and an existing build whose source
 files match this snapshot. Both publication proof entry points, their axiom
-audits and their specification checks compiled separately. A clean rebuild
-of the packaged projects was not run.
+audits and their specification checks compiled separately. These local checks
+reused existing project artifacts. The separate public Linux CI built the
+project from source with no restored project cache, as recorded below.
 
 The two public targets and two final project theorems use only
 `[propext, Classical.choice, Quot.sound]`, as checked by
@@ -489,22 +490,22 @@ imports an FC placeholder or asserts the remaining geometric construction.
 
 ### Lean Comparator check
 
-The [public `main` workflow](https://github.com/KitaKen1/reversible-finsler-spheres/actions/workflows/fc-target.yml)
-builds and checks this exact target on every push to `main`. The status badge
-and linked workflow show the current public result. The archived private
-sandbox result below records the earlier verification.
-
 The exact n ≥ 3 FC target passed the full
-[hosted workflow](https://github.com/KitaKen1/ci-test-sandbox/actions/runs/39700419746)
-on 22 October 2026, using the unmodified pinned upstream Comparator CLI and
-real Linux `landrun`. Target/definition comparison, transitive axiom checks and
-built-in Lean kernel replay all passed. The
-[archived log](verification/ci/39700419746/fc-target-comparator.log) reports
+[public `main` CI run](https://github.com/KitaKen1/reversible-finsler-spheres/actions/runs/39703676590)
+on **22 October 2026 at 05:30 UTC (14:30 JST)**, testing code commit
+`be3aaf6949fd931d61aef749ed59207fc6ef21a6`. The run used the unmodified pinned
+upstream Comparator CLI and real Linux `landrun`. Target/definition comparison,
+transitive axiom checks and built-in Lean kernel replay all passed. The
+[archived public log](verification/ci/39703676590/fc-target-comparator.log) reports
 `Lean default kernel accepts the solution` and `Your solution is okay!`.
-The [receipt](verification/ci/39700419746/receipt.json) records the tested code
+The [receipt](verification/ci/39703676590/receipt.json) records the tested code
 commit, immutable checker pins, artifact digest and source/log hashes.
-The hosted source build reused artifacts only after Lake validated their traces;
-this is an incremental build, not a clean Mathlib rebuild.
+The project was built from source with no restored project cache; pinned
+dependency caches were used. The source-build step took 4 h 4 min 45 s, and the
+combined Comparator/post-audit step took 15 min 51 s. These are step durations,
+not a kernel-only measurement. The
+[earlier private sandbox result](verification/ci/39700419746/receipt.json)
+is retained as historical evidence.
 
 The current local macOS run passed all nine C-output entry compilations, both
 exports and the upstream target/axiom comparison; its built-in kernel replay
@@ -575,16 +576,19 @@ The [exact-target workflow](.github/workflows/fc-target.yml) verifies the n ≥ 
 FC target on public `main` in
 [GitHub Actions](https://github.com/KitaKen1/reversible-finsler-spheres/actions/workflows/fc-target.yml).
 It builds the proof from source, checks its transitive axioms and runs the
-unmodified pinned Comparator CLI with built-in kernel replay. Its conclusion
-must be read from the individual hosted run. The broader historical
+unmodified pinned Comparator CLI with built-in kernel replay.
+[Run 39703676590](https://github.com/KitaKen1/reversible-finsler-spheres/actions/runs/39703676590)
+passed all steps on 22 October 2026 at 05:30 UTC (14:30 JST). The broader historical
 [workflow](.github/workflows/verification.yml) remains available for manual dispatch.
 
 ### Logs and archives
 
 The exact-target workflow retains build and Comparator logs for 90 days.
-Public run logs are accessible from this repository's Actions page. The
-[archived successful sandbox logs](verification/ci/39700419746/) are also
-included here. Additional evidence is in the [local log collection](verification/local/),
+The [successful public run's build, Comparator and axiom logs](verification/ci/39703676590/)
+are committed here with a [source-hashed receipt](verification/ci/39703676590/receipt.json).
+The downloaded artifact ZIP matched GitHub's SHA-256 digest before extraction.
+The [earlier successful sandbox logs](verification/ci/39700419746/) remain
+available. Additional evidence is in the [local log collection](verification/local/),
 with outcomes and hashes recorded in the
 [receipt](verification/local/receipt.json) and
 [FC receipt](verification/local/fc-four-statements-receipt.json).
