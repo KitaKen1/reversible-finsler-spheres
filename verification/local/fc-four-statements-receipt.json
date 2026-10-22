@@ -1,0 +1,115 @@
+{
+  "kind": "incremental-fc-statement-elaboration-and-readback",
+  "started_utc": "2026-10-21T00:22:00Z",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "source_files_matched": 2056,
+  "clean_build": false,
+  "proof_validation": false,
+  "proof_scope": "n >= 3 solution and implication theorems; n = 2 supplied by literature, outside Lean proof scope",
+  "fc_import_check": "Mathematical body unchanged; standard FC import expanded to official attributes and used Mathlib modules for cross-version correspondence. Exact upstream import is checked separately by check-fc-upstream.py.",
+  "expected_fc_placeholders": 4,
+  "fc_isolated_from_proof_projects": true,
+  "fc_dependency_packages": [
+    "Cli",
+    "LeanSearchClient",
+    "Qq",
+    "aesop",
+    "batteries",
+    "importGraph",
+    "mathlib",
+    "plausible",
+    "proofwidgets"
+  ],
+  "inputs_sha256": {
+    "_upstream/FormalConjecturesUtil/Attributes/AMS.lean": "e5a6b4b0cd42e1ad11e84b75bd89f78a9797a98e5b23d8b956f13190b9078d96",
+    "_upstream/FormalConjecturesUtil/Attributes/Basic.lean": "181a7168432ef2c7768616117daf1b60552206caa49f6d96e2d86fb0b7e66ca3",
+    "FClikelean/ReversibleFinslerSpheres.lean": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+    "verification/FCStatementReadback.lean": "87399ff33261900b9d36c6357b62529fac1cf82ba7f00e26a01e3e6d47c95b5a",
+    "lean/FCTargetDefinitions.lean": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+    "verification/FCDefinitionCorrespondence.lean": "53f3985bbe919e2dbf27d2f2877d177b0e9b28b0fb7c18c5a4b5e3cf25cef6f5",
+    "lean/FCSolution.lean": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+    "lean/FCImplications.lean": "634695313d9b5987371be9196de7b5f5f5cdff66965cb6b3e84135df9183375a",
+    "verification/FCImplicationsReadback.lean": "c519455157f9ec55f44541c4d2505302b02359c9d06b7999c6cab7b35ba2990c",
+    "scripts/check-fc-statements.py": "bcc4071ef5da12d027e8b9135ce8b9f9f88c8d7699d222d4c88c2d2d761ba2c3"
+  },
+  "checks": [
+    {
+      "check": "upstream-ams-attributes",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": true,
+      "seconds": 1.438,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "upstream-category-attributes",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": true,
+      "seconds": 1.863,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "four-fc-statements",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": true,
+      "seconds": 7.86,
+      "sorry_warnings": 4
+    },
+    {
+      "check": "standalone-statement-and-metadata-readback",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": true,
+      "seconds": 8.942,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "proof-target-definitions",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": false,
+      "seconds": 3.823,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "definition-correspondence-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": false,
+      "seconds": 4.86,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "higher-dimensional-solution",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": false,
+      "seconds": 14.788,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "proved-implications",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": false,
+      "seconds": 8.649,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "implications-readback-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "isolated_mathlib_only": false,
+      "seconds": 13.754,
+      "sorry_warnings": 0
+    }
+  ],
+  "expanded_imports_sha256": "559cbfe252b5eadeb721196588c2bf3e1f8a67a72d041e99fc06c65636c014ef",
+  "status": "pass",
+  "temporary_build_removed": true,
+  "finished_utc": "2026-10-21T00:23:06Z",
+  "log": "verification/local/fc-four-statements.log",
+  "log_sha256": "7e1e75e330de62e563a1cfeae433466eba39e83e74ba9ede8f5c8602654debd3"
+}

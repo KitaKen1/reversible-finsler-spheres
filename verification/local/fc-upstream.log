@@ -1,0 +1,950 @@
+FormalConjecturesUtil.Answer.Syntax
+
+FormalConjecturesUtil.Answer
+
+FormalConjecturesUtil.Attributes.AMS
+
+FormalConjecturesForMathlib.Topology.MetricSpace.MetricSeparated
+
+FormalConjecturesUtil.Attributes.Basic
+
+FormalConjecturesForMathlib.Topology.LebesgueCoveringDimension
+
+FormalConjecturesUtil.Linters.FormalProofLinter
+
+FormalConjecturesUtil.Linters.CategoryLinter
+
+FormalConjecturesUtil.Linters.CategoryDocstringLinter
+
+FormalConjecturesUtil.Linters.CategoryAnswerLinter
+
+FormalConjecturesUtil.Linters.AnswerLinter
+
+FormalConjecturesUtil.Linters.AMSLinter
+
+FormalConjecturesForMathlib.Topology.Homogeneous
+
+FormalConjecturesForMathlib.Topology.GDelta
+
+FormalConjecturesForMathlib.Topology.Discrete
+
+FormalConjecturesForMathlib.Topology.CardinalInvariants
+
+FormalConjecturesForMathlib.Topology.Algebra.InfiniteSum.Real
+
+FormalConjecturesForMathlib.Topology.Algebra.InfiniteSum.Order
+
+FormalConjecturesForMathlib.Topology.Algebra.InfiniteSum.Group
+
+FormalConjecturesForMathlib.Topology.AbsoluteNeighborhoodRetract
+
+FormalConjecturesForMathlib.SetTheory.Cardinal.SimpleGraph
+
+FormalConjecturesForMathlib.Analysis.HasGaps
+
+FormalConjecturesForMathlib.SetTheory.Cardinal.Continuum
+
+FormalConjecturesForMathlib.SetTheory.Cardinal.Arithmetic
+
+FormalConjecturesForMathlib.RingTheory.Valuation.LocalUniformization
+
+FormalConjecturesForMathlib.RingTheory.SystemOfParameters
+
+FormalConjecturesForMathlib.RingTheory.MvPolynomial.LexPlusPowers
+
+FormalConjecturesForMathlib.RingTheory.CohenMacaulayModule
+
+FormalConjecturesForMathlib.RingTheory.Ideal.Defs
+
+FormalConjecturesForMathlib.RingTheory.IntersectionMultiplicity
+
+FormalConjecturesForMathlib.RingTheory.Ideal.Basic
+
+FormalConjecturesForMathlib.RingTheory.Noetherian.Defs
+
+FormalConjecturesForMathlib.RingTheory.Ideal.Maximal
+
+FormalConjecturesForMathlib.RingTheory.Bialgebra.TrivialModule
+
+FormalConjecturesForMathlib.Probability.FiniteMethod
+
+FormalConjecturesForMathlib.Order.Unimodular
+
+FormalConjecturesForMathlib.Order.Nat
+
+FormalConjecturesForMathlib.Order.Interval.Finset.Nat
+
+FormalConjecturesForMathlib.Order.Interval.Finset.Basic
+
+FormalConjecturesForMathlib.Order.Filter.atTopBot.Finset
+
+FormalConjecturesForMathlib.Order.Filter.Cofinite
+
+FormalConjecturesForMathlib.Order.Bounds.Basic
+
+FormalConjecturesForMathlib.NumberTheory.WieferichPrime
+
+FormalConjecturesForMathlib.Algebra.Group.GrowthFunction
+
+FormalConjecturesForMathlib.NumberTheory.WallSunSunPrimes
+
+FormalConjecturesForMathlib.NumberTheory.SmoothScale
+
+FormalConjecturesForMathlib.NumberTheory.Primitive
+
+FormalConjecturesForMathlib.NumberTheory.PrimeGap
+
+FormalConjecturesForMathlib.NumberTheory.NumberField.FundamentalDiscriminant
+
+FormalConjecturesForMathlib.NumberTheory.PisotNumber
+
+FormalConjecturesForMathlib.NumberTheory.NormalNumber
+
+FormalConjecturesForMathlib.NumberTheory.MultiplicativelyIndependent
+
+FormalConjecturesForMathlib.NumberTheory.LegendreSymbol.Basic
+
+FormalConjecturesForMathlib.NumberTheory.Lacunary
+
+FormalConjecturesForMathlib.NumberTheory.Harmonic
+
+FormalConjecturesForMathlib.NumberTheory.Divisors
+
+FormalConjecturesForMathlib.NumberTheory.DirichletCharacter.Basic
+
+FormalConjecturesForMathlib.NumberTheory.DiophantineApproximation.ZNumber
+
+FormalConjecturesForMathlib.NumberTheory.CoveringSystem
+
+FormalConjecturesForMathlib.NumberTheory.BeurlingPrimes
+
+FormalConjecturesForMathlib.NumberTheory.AutomorphicForm.BorelJacquet.Subgroups
+
+FormalConjecturesForMathlib.NumberTheory.Amicable
+
+FormalConjecturesForMathlib.NumberTheory.AlmostPrime
+
+FormalConjecturesForMathlib.NumberTheory.AutomorphicForm.BorelJacquet.LieDeriv
+
+FormalConjecturesForMathlib.NumberTheory.AdditivelyComplete
+
+FormalConjecturesForMathlib.NumberTheory.PracticalNumbers
+
+FormalConjecturesForMathlib.NumberTheory.AdditiveComplement
+
+FormalConjecturesForMathlib.NumberTheory.AdditionChain
+
+FormalConjecturesForMathlib.ModelTheory.Encoding
+
+FormalConjecturesForMathlib.ModelTheory.Real
+
+FormalConjecturesForMathlib.NumberTheory.AutomorphicForm.BorelJacquet.CenterAction
+
+FormalConjecturesForMathlib.ModelTheory.Decidability
+
+FormalConjecturesForMathlib.Logic.Equiv.Fin.Rotate
+
+FormalConjecturesForMathlib.LinearAlgebra.QuadraticForm.UInvariant
+
+FormalConjecturesForMathlib.NumberTheory.AutomorphicForm.BorelJacquet
+
+FormalConjecturesForMathlib.LinearAlgebra.GeneralLinearGroup
+
+FormalConjecturesForMathlib.LinearAlgebra.AffineSpace.Simplex.Basic
+
+FormalConjecturesForMathlib.Lean.Elab.InfoTree.Util
+
+FormalConjecturesForMathlib.Tactic.Linter.Term
+
+FormalConjecturesForMathlib.LinearAlgebra.SpecialLinearGroup
+
+FormalConjecturesUtil.Linters.ExistsImplicationLinter
+
+FormalConjecturesForMathlib.GroupTheory.Torsion
+
+FormalConjecturesForMathlib.Geometry.3d
+
+FormalConjecturesForMathlib.Geometry.Manifold.LieGroupPresentation
+
+FormalConjecturesForMathlib.Geometry.Euclidean
+
+FormalConjecturesForMathlib.FieldTheory.MvRatFunc.Defs
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.UnitDistancePlaneGraph
+
+FormalConjecturesForMathlib.FieldTheory.MilnorKTheory
+
+FormalConjecturesForMathlib.Dynamics.SymbolicDynamics.BlockComplexity
+
+FormalConjecturesForMathlib.Data.ZMod.PerfectDifferenceSet
+
+FormalConjecturesForMathlib.Data.ZMod.Fp
+
+FormalConjecturesForMathlib.NumberTheory.ExpansionEntropy
+
+FormalConjecturesForMathlib.Data.Sym.Sym2
+
+FormalConjecturesForMathlib.Data.Set.Triplewise
+
+FormalConjecturesForMathlib.Geometry.Metric
+
+FormalConjecturesForMathlib.Combinatorics.SetFamily.UnionFree
+
+FormalConjecturesForMathlib.Data.Set.Interval
+
+FormalConjecturesForMathlib.Data.Real.NearestInt
+
+FormalConjecturesForMathlib.Geometry.2d
+
+FormalConjecturesForMathlib.Data.Nat.Prime.Infinite
+
+FormalConjecturesForMathlib.Data.Real.Constants
+
+FormalConjecturesForMathlib.Data.Nat.Prime.Finset
+
+FormalConjecturesForMathlib.Data.Nat.Prime.Defs
+
+FormalConjecturesForMathlib.Data.Nat.Prime.Composite
+
+FormalConjecturesForMathlib.NumberTheory.SierpinskiNumber
+
+FormalConjecturesForMathlib.Data.Nat.PerfectPower
+
+FormalConjecturesForMathlib.Data.Nat.MaxPrimeFac
+
+FormalConjecturesForMathlib.Data.Nat.Init
+
+FormalConjecturesForMathlib.Data.Nat.Full
+
+FormalConjecturesForMathlib.Data.Nat.Factorization.Basic
+
+FormalConjecturesForMathlib.NumberTheory.Carmichael
+
+FormalConjecturesForMathlib.Data.Nat.Squarefree
+
+FormalConjecturesForMathlib.Data.Int.Order.Basic
+
+FormalConjecturesForMathlib.Data.Int.IntermediateValue
+
+FormalConjecturesForMathlib.Data.Finset.ReciprocalSum
+
+FormalConjecturesForMathlib.Data.Finset.Powerset
+
+FormalConjecturesForMathlib.Data.Finset.Card
+
+FormalConjecturesForMathlib.Data.Bool.Basic
+
+FormalConjecturesForMathlib.Computability.TuringMachine.PostTuringMachine
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Johnson
+
+FormalConjecturesForMathlib.Computability.Primrec
+
+FormalConjecturesForMathlib.Computability.TuringMachine.BusyBeavers
+
+FormalConjecturesForMathlib.Computability.DFA
+
+FormalConjecturesForMathlib.Computability.TuringMachine.Notation
+
+FormalConjecturesForMathlib.Computability.BitstringEncoding
+
+FormalConjecturesForMathlib.Computability.AutomaticSequence
+
+FormalConjecturesForMathlib.Computability.Complexity
+
+FormalConjecturesForMathlib.NumberTheory.AutomaticNumber
+
+FormalConjecturesForMathlib.Combinatorics.YoungDiagram
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.WellTotallyDominated
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Temperature
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.SubgraphIsomorphism
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.SpanningTree
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.SizeRamsey
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Residue
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.QuasiLineGraph
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Prod
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.PathCover
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Matching
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.LargestInducedTree
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Saturation
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Induced
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Independence
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Hypercube
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.InducedTreeNeighborhood
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.HomDensity
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.HarmonicIndex
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.FractionalAlpha
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.EdgeColouring
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Domination
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Ramsey
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.DiamExtra
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Degeneracy
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Degrees
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Decomposition
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.AnnihilationNumber
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.CycleRank
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Cycle
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Cvetkovic
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Connectivity
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.CompleteGraphEdgeCount
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Clique
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.VertexDistance
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Coloring.Vertex
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.WienerIndex
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.SzegedIndex
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Eccentricity
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Circumference
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Balanced
+
+FormalConjecturesForMathlib.Combinatorics.SetTheory.PartitionRelation
+
+FormalConjecturesForMathlib.Combinatorics.SetFamily.VCDim
+
+FormalConjecturesForMathlib.Combinatorics.SetFamily.Sunflower
+
+FormalConjecturesForMathlib.Combinatorics.SetFamily.PropertyB
+
+FormalConjecturesForMathlib.Combinatorics.Additive.VCDim
+
+FormalConjecturesForMathlib.Combinatorics.Ramsey
+
+FormalConjecturesForMathlib.Combinatorics.LimitObjects.Graphon
+
+FormalConjecturesForMathlib.Combinatorics.Ramsey.Diagonal
+
+FormalConjecturesForMathlib.Combinatorics.LatinSquare
+
+FormalConjecturesForMathlib.Combinatorics.LimitObjects.Tournamenton
+
+FormalConjecturesForMathlib.Combinatorics.Hypergraph.ThreeUniform
+
+FormalConjecturesForMathlib.Combinatorics.Additive.RestrictedSumset
+
+FormalConjecturesForMathlib.Combinatorics.Digraph.Tournament
+
+FormalConjecturesForMathlib.Combinatorics.Additive.DifferenceBasis
+
+FormalConjecturesForMathlib.Combinatorics.AP.Basic
+
+FormalConjecturesForMathlib.Combinatorics.Basic
+
+FormalConjecturesForMathlib.Combinatorics.Additive.Coset
+
+FormalConjecturesForMathlib.Analysis.SpecialFunctions.NthRoot
+
+FormalConjecturesForMathlib.Analysis.SpecialFunctions.AdditiveCharacter
+
+FormalConjecturesForMathlib.Analysis.SpecialFunctions.Log.Basic
+
+FormalConjecturesForMathlib.Analysis.Real.Cardinality
+
+FormalConjecturesForMathlib.Analysis.Matrix.Spectrum
+
+FormalConjecturesForMathlib.Analysis.Fourier.SpectralSets
+
+FormalConjecturesForMathlib.Combinatorics.SimpleGraph.LovaszTheta
+
+FormalConjecturesForMathlib.Analysis.Equidistribution.ModOne
+
+FormalConjecturesForMathlib.Analysis.Asymptotics.Basic
+
+FormalConjecturesForMathlib.AlgebraicGeometry.VectorBundle
+
+FormalConjecturesForMathlib.AlgebraicGeometry.ProjectiveSpace
+
+FormalConjecturesForMathlib.AlgebraicGeometry.EllipticCurve.Tamagawa
+
+FormalConjecturesForMathlib.AlgebraicGeometry.EllipticCurve.Regulator
+
+FormalConjecturesForMathlib.AlgebraicGeometry.EllipticCurve.MinimalDiscriminant
+
+FormalConjecturesForMathlib.AlgebraicGeometry.EllipticCurve.GlobalPeriod
+
+FormalConjecturesForMathlib.Algebra.Ring.PythagorasNumber
+
+FormalConjecturesForMathlib.Algebra.QuadraticAlgebra.Instances
+
+FormalConjecturesForMathlib.Algebra.Powerfree
+
+FormalConjecturesForMathlib.Algebra.Polynomial.HasseDeriv
+
+FormalConjecturesForMathlib.NumberTheory.NumberField.Quadratic
+
+FormalConjecturesForMathlib.Algebra.Polynomial.Basic
+
+FormalConjecturesForMathlib.Algebra.Polynomial.Algebra
+
+FormalConjecturesForMathlib.Algebra.MvPolynomial.RegularFunction
+
+FormalConjecturesForMathlib.Algebra.Order.Group.Pointwise.Interval
+
+FormalConjecturesForMathlib.Algebra.MvPolynomial.PoissonBracket
+
+FormalConjecturesForMathlib.Algebra.Group.Indicator
+
+FormalConjecturesForMathlib.Combinatorics.Additive.Convolution
+
+FormalConjecturesForMathlib.Data.Set.Density
+
+FormalConjecturesForMathlib.Algebra.Group.Action.Pointwise.Set.Basic
+
+FormalConjecturesForMathlib.Algebra.GradedMonoid
+
+FormalConjecturesForMathlib.Combinatorics.Additive.Basis
+
+FormalConjecturesForMathlib.Algebra.GCDMonoid.Finset
+
+FormalConjecturesUtil.Linters.StubLinter
+
+FormalConjecturesForMathlib.Algebra.Homology.DerivedCategory.Ext.GradedAlgebra
+
+FormalConjecturesUtil.Linters.NamespaceLinter
+
+FormalConjecturesUtil.Linters.ModuleDocstringLinter
+
+FormalConjecturesUtil.Linters.LatexDocstringLinter
+
+FormalConjecturesUtil.Linters.ImportLinter
+
+FormalConjecturesForMathlib.RingTheory.Bialgebra.Cohomology
+
+FormalConjecturesUtil.Linters.CopyrightLinter
+
+FormalConjecturesForMathlib
+
+FormalConjecturesUtil
+
+FClikelean/ReversibleFinslerSpheres.lean
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:83:8: warning: declaration uses `sorry`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:93:8: warning: declaration uses `sorry`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:102:8: warning: declaration uses `sorry`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:110:8: warning: declaration uses `sorry`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/FClikelean/ReversibleFinslerSpheres.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+
+verification/FCStatementReadback.lean
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+PASS: four genuine FC research-solved / AMS 53 attributes
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`
+/Users/kenta/Dropbox/Intellectual Moonshine/?AI数学/全かぎゃくfishaer九面/forgithub/verification/FCStatementReadback.lean:1:0: warning: The copyright header is incorrect. Please copy and paste the following one:
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+Note: This linter can be disabled with `set_option linter.style.copyright.formalConjectures false`

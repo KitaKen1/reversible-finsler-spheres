@@ -1,0 +1,12 @@
+.DS_Store
+**/.lake/
+**/.lake-tmp/
+.local-check/
+runtime-results/
+**/__pycache__/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
+*.trace
+*.export

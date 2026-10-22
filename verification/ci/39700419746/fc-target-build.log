@@ -1,0 +1,10 @@
+Checking cached closure: Finsler.Residual.FillRel
+Lake validated 2001 cached project modules; 4 serial modules remain
+[1/4] FCTargetDefinitions
+Build completed successfully (2849 jobs).
+[2/4] FCSolution
+Build completed successfully (5913 jobs).
+[3/4] FCExactSolution
+Build completed successfully (5914 jobs).
+[4/4] FCExactAudit
+Build completed successfully (5915 jobs).

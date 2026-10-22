@@ -1,0 +1,26 @@
+{
+  "kind": "proof-only-memory-reduction",
+  "file": "Finsler/Loop/NativeSequentialSuffixMiddle.lean",
+  "original_sha256": "4fcf74376514fea9c832030182774dae4a962c5e3471643be2c04df0d1163515",
+  "replacement_sha256": "abd8b4cf00ed548e3543ebe30585e1a2565f6cc9f769cc46798552c94177c847",
+  "public_statement_changed": false,
+  "definitions_changed": false,
+  "fc_submission_changed": false,
+  "change": "Prove rebracketing on abstract ThreePathLoop.Data with congrArg, then specialize. Avoid a dependent rewrite over the full nested geometric input.",
+  "local_command_settings": [
+    "Lean v4.35.0-rc3",
+    "-M4096",
+    "-j2",
+    "-DElab.async=false",
+    "matching Lake setup"
+  ],
+  "local_compile_seconds": 7.902,
+  "local_maximum_resident_bytes": 1711177728,
+  "hosted_result": "pending",
+  "compile_log": "verification/local/native-suffix-memory-compile.log",
+  "compile_log_sha256": "6e673d9220b03b957effd263fa279c472837c86161b715e888eb63b4c2a35f60",
+  "exact_target_compilation_and_axiom_audit_both_variants": "pass",
+  "regression_receipt": "verification/local/memory-regression-receipt.json",
+  "regression_receipt_sha256": "5546e7b202b644e7e62d9f17baea6194ae7bb9d57322e8b0b7702709572a2b14",
+  "local_comparator_after_refactor": "all 14 phases pass, including empty-environment kernel replay (432.554 seconds)"
+}

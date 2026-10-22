@@ -1,0 +1,45 @@
+{
+  "kind": "exact-hosted-post-comparator-audit-command",
+  "checks": [
+    {
+      "module": "FCTargetDefinitions",
+      "source_sha256": "f1552a3d37275fab9c7952dd150877c3745babb4868be41677a0d591270906cb",
+      "exit_code": 0,
+      "seconds": 7.969
+    },
+    {
+      "module": "FCSolution",
+      "source_sha256": "62a63d0e86483329403e9fdd660ce9686d57593ba332cb97bb4a65bdb32a6f92",
+      "exit_code": 0,
+      "seconds": 6.624
+    },
+    {
+      "module": "FCExactSolution",
+      "source_sha256": "8b6ef7f4cb3ba54ef6bbdeb3e0f7347df10635b80c5d521c1b29f99406bbc2fc",
+      "exit_code": 0,
+      "seconds": 5.016
+    },
+    {
+      "module": "FCExactAudit",
+      "source_sha256": "688c6fdb9fdd7874afe22cc4c25d0cf930f36891d294ac3d262b1b86eb798f33",
+      "exit_code": 0,
+      "seconds": 3.43
+    },
+    {
+      "command": "lean -M4096 -j2 -DElab.async=false FCExactAudit.lean",
+      "exit_code": 0,
+      "seconds": 10.125,
+      "log": "verification/local/ci-audit-command-direct.log"
+    }
+  ],
+  "clean_build": false,
+  "status": "pass",
+  "temporary_products_removed": true,
+  "logs_sha256": {
+    "ci-audit-command-FCExactSolution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ci-audit-command-FCExactAudit.log": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+    "ci-audit-command-FCSolution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ci-audit-command-direct.log": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+    "ci-audit-command-FCTargetDefinitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

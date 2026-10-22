@@ -1,0 +1,38 @@
+2026-10-22T00:31:43.2877690Z ##[group]Run bash lean/comparator/install-tools.sh
+2026-10-22T00:31:43.2877921Z [36;1mbash lean/comparator/install-tools.sh[0m
+2026-10-22T00:31:43.2966609Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-22T00:31:43.2966796Z env:
+2026-10-22T00:31:43.2966905Z   LEAN_NUM_THREADS: 2
+2026-10-22T00:31:43.2967221Z   COMPARATOR_TOOLS: /home/runner/work/_temp/finsler-comparator-tools
+2026-10-22T00:31:43.2967422Z ##[endgroup]
+2026-10-22T00:31:43.3373605Z Cloning into '/home/runner/work/_temp/finsler-comparator-tools/comparator'...
+2026-10-22T00:31:43.6992008Z HEAD is now at fd5d5bc chore: bump toolchain to v4.35.0-rc3 (#94)
+2026-10-22T00:31:43.7327796Z Cloning into '/home/runner/work/_temp/finsler-comparator-tools/lean4export'...
+2026-10-22T00:31:44.3763274Z HEAD is now at 66f1fb4 chore: bump toolchain to v4.35.0-rc3 (#53)
+2026-10-22T00:31:44.4095198Z Cloning into '/home/runner/work/_temp/finsler-comparator-tools/landrun'...
+2026-10-22T00:31:44.7868720Z HEAD is now at 811cfff Update README.md
+2026-10-22T00:31:44.8540831Z info: lean4export: materializing new dependency
+2026-10-22T00:31:44.8597330Z info: lean4export: fetching revision '66f1fb4bc256072069767fce52d39480e4524869' from https://github.com/leanprover/lean4export
+2026-10-22T00:31:45.1856379Z info: lean4export: checking out revision '66f1fb4bc256072069767fce52d39480e4524869'
+2026-10-22T00:31:46.1775387Z ✔ [1/4] Built Comparator.Util (227ms)
+2026-10-22T00:31:49.4799303Z ✔ [5/16] Built Comparator.Util:c.o (92ms)
+2026-10-22T00:31:50.6834427Z ✔ [6/16] Built Export.Parse (1.3s)
+2026-10-22T00:31:51.0834444Z ✔ [7/16] Built Comparator.Axioms (462ms)
+2026-10-22T00:31:51.2864477Z ✔ [8/16] Built Comparator.Axioms:c.o (231ms)
+2026-10-22T00:31:51.8854922Z ✔ [9/16] Built Comparator.Compare (552ms)
+2026-10-22T00:31:52.1864456Z ✔ [10/16] Built Comparator.Compare:c.o (311ms)
+2026-10-22T00:31:52.4864503Z ✔ [11/16] Built Comparator (302ms)
+2026-10-22T00:31:52.5864507Z ✔ [12/16] Built Comparator:c.o (45ms)
+2026-10-22T00:31:52.9862106Z ✔ [13/16] Built Export.Parse:c.o (2.3s)
+2026-10-22T00:31:56.7884983Z ✔ [14/16] Built Main (4.2s)
+2026-10-22T00:31:57.1878689Z ✔ [15/16] Built Main:c.o (458ms)
+2026-10-22T00:31:58.9939234Z ✔ [16/16] Built comparator:exe (1.8s)
+2026-10-22T00:31:58.9942626Z Build completed successfully (16 jobs).
+2026-10-22T00:32:00.4374630Z ✔ [2/6] Built Export (1.4s)
+2026-10-22T00:32:01.4394481Z ✔ [3/6] Built Main (998ms)
+2026-10-22T00:32:01.5387183Z ✔ [4/6] Built Main:c.o (153ms)
+2026-10-22T00:32:01.9393372Z ✔ [5/6] Built Export:c.o (1.5s)
+2026-10-22T00:32:02.8394406Z ✔ [6/6] Built lean4export:exe (875ms)
+2026-10-22T00:32:02.8398062Z Build completed successfully (6 jobs).
+2026-10-22T00:32:02.8762012Z no Go files in /home/runner/work/_temp/finsler-comparator-tools/landrun
+2026-10-22T00:32:02.8777772Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,78 @@
+name: Reversible Finsler spheres verification
+
+# Prepared locally; no successful hosted run is claimed by this file.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: finsler-verification-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  verify:
+    name: Verify ${{ matrix.project }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        project: [lean, leanWithoutComparator]
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check sealed source inventory and identical proof variants
+        run: python3 scripts/check-package.py
+      - name: Install elan and the project's pinned Lean toolchain
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "COMPARATOR_TOOLS=$RUNNER_TEMP/finsler-comparator-tools" >> "$GITHUB_ENV"
+      - name: Prepare disk space on the disposable hosted runner
+        run: bash scripts/prepare-ci-runner.sh "${{ runner.environment }}"
+      - name: Download caches for pinned dependencies
+        run: python3 scripts/fetch-target-cache.py --project "${{ matrix.project }}" FCSolution FCImplications FCTwoSphere FCAudit SpecificationReadback
+      - name: Build the reference before the solution
+        if: matrix.project == 'lean'
+        run: python3 scripts/build-serial.py --project lean Challenge
+      - name: Build proof, axiom audit and mathematical specification
+        run: python3 scripts/build-serial.py --project "${{ matrix.project }}" FCSolution FCImplications FCTwoSphere FCAudit SpecificationReadback
+      - name: Fetch the pinned FC source for metadata and correspondence checks
+        if: matrix.project == 'lean'
+        run: |
+          git init "$RUNNER_TEMP/formal-conjectures"
+          git -C "$RUNNER_TEMP/formal-conjectures" remote add origin https://github.com/google-deepmind/formal-conjectures.git
+          git -C "$RUNNER_TEMP/formal-conjectures" fetch --depth 1 origin 197f7f8dcc457f556754f826389d2ec7a0d85b92
+          git -C "$RUNNER_TEMP/formal-conjectures" checkout --detach FETCH_HEAD
+      - name: Check FC metadata, statement correspondence and proved implications
+        if: matrix.project == 'lean'
+        run: python3 scripts/check-fc-statements.py --fc-source "$RUNNER_TEMP/formal-conjectures"
+      - uses: actions/setup-go@v5
+        if: matrix.project == 'lean'
+        with:
+          go-version: '1.25'
+      - name: Install pinned Comparator, exporter and real landrun
+        if: matrix.project == 'lean'
+        run: bash lean/comparator/install-tools.sh
+      - name: Compare definitions and target types, audit axioms and replay kernel
+        if: matrix.project == 'lean'
+        run: bash lean/comparator/run-check.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always() && matrix.project == 'lean'
+        with:
+          name: comparator-${{ github.run_id }}-${{ github.run_attempt }}
+          path: runtime-results/
+          if-no-files-found: warn
+          retention-days: 90
+

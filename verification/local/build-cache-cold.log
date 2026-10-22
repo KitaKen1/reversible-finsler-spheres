@@ -1,0 +1,8 @@
+Checking cached closure: Core
+Cached closure is not current; using the full serial build
+[1/2] Core
+✔ [2/2] Built Core (284ms)
+Build completed successfully (2 jobs).
+[2/2] Entry
+✔ [3/3] Built Entry (277ms)
+Build completed successfully (3 jobs).

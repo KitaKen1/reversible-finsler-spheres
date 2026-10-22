@@ -1,0 +1,182 @@
+{
+  "kind": "incremental-source-matched-local-check",
+  "sandbox": false,
+  "clean_build": false,
+  "external_kernel": false,
+  "checks": [
+    {
+      "check": "lean-FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.767,
+      "log": "verification/local/lean-FCTargetDefinitions.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "lean-Challenge",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.735,
+      "log": "verification/local/lean-Challenge.log",
+      "raw_log_sha256": "fee572b1bbb2148a79025e8cc7bb97a1f952f7f72495c5af12f10a967ab16099",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "12511f000b177dfa237cd79100c205462dd2432b6cf949919bdd4879b99c52f2"
+    },
+    {
+      "check": "fc-statement",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 6.452,
+      "log": "verification/local/fc-statement.log",
+      "raw_log_sha256": "c2681a8d8c7b0312a049552af4b346de914fe10cc1334bc25e2260a2ebf0d4fc",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "ba9ab107773a74bee5b15af7f82f0308dda15d70a6ea524800243b425fd01bdc"
+    },
+    {
+      "check": "lean-FCSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 23.336,
+      "log": "verification/local/lean-FCSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "lean-FCAudit",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 20.493,
+      "log": "verification/local/lean-FCAudit.log",
+      "raw_log_sha256": "7c6586cd4e81291bc8f1b61a9a0b096458ffe29fdadd623b5b772fec6c0ed38a",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "7c6586cd4e81291bc8f1b61a9a0b096458ffe29fdadd623b5b772fec6c0ed38a"
+    },
+    {
+      "check": "lean-SpecificationReadback",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 16.033,
+      "log": "verification/local/lean-SpecificationReadback.log",
+      "raw_log_sha256": "d96240790d18980dc581e699ff3368ac097fd365cfe58891b7965ef752db476a",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "d96240790d18980dc581e699ff3368ac097fd365cfe58891b7965ef752db476a"
+    },
+    {
+      "check": "without-FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 6.248,
+      "log": "verification/local/without-FCTargetDefinitions.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "without-FCSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 14.105,
+      "log": "verification/local/without-FCSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "without-FCAudit",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 19.107,
+      "log": "verification/local/without-FCAudit.log",
+      "raw_log_sha256": "7c6586cd4e81291bc8f1b61a9a0b096458ffe29fdadd623b5b772fec6c0ed38a",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "7c6586cd4e81291bc8f1b61a9a0b096458ffe29fdadd623b5b772fec6c0ed38a"
+    },
+    {
+      "check": "without-SpecificationReadback",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 16.771,
+      "log": "verification/local/without-SpecificationReadback.log",
+      "raw_log_sha256": "d96240790d18980dc581e699ff3368ac097fd365cfe58891b7965ef752db476a",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "d96240790d18980dc581e699ff3368ac097fd365cfe58891b7965ef752db476a"
+    },
+    {
+      "check": "export-Challenge",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 26.522,
+      "log": "verification/local/export-Challenge.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "export-FCSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 96.703,
+      "log": "verification/local/export-FCSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "comparator-structure-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 295.157,
+      "log": "verification/local/comparator-structure-and-axioms.log",
+      "raw_log_sha256": "a87129313638b7102aa2e94180792b63332e9e2e9870be72f4cff325cc567c7a",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "a87129313638b7102aa2e94180792b63332e9e2e9870be72f4cff325cc567c7a"
+    },
+    {
+      "check": "comparator-builtin-kernel-replay",
+      "status": "timeout",
+      "exit_code": null,
+      "seconds": 180.077,
+      "log": "verification/local/comparator-builtin-kernel-replay.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "started_utc": "2026-10-18T23:42:29Z",
+  "source_files_matched_per_variant": 2056,
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "source_match_caveat": "Source hashes match; reused oleans are not a clean rebuild.",
+  "comparator_commit": "fd5d5bcf14177b187f66d4502071268d877887c3",
+  "lean4export_commit": "66f1fb4bc256072069767fce52d39480e4524869",
+  "finished_utc": "2026-10-18T23:58:05Z",
+  "primary_dependency_checkouts": {
+    "mathlib": {
+      "commit": "f6090c7095e1e56b3464c1daba5f24631f1290d2",
+      "tracked_files_clean": true
+    },
+    "TauCeti": {
+      "commit": "d5a37097e93f6289425d25632df6c8bf00d749c0",
+      "tracked_files_clean": true
+    },
+    "lean-pool": {
+      "commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+      "tracked_files_clean": true
+    }
+  },
+  "original_sources_rechecked_at_end": true,
+  "kernel_attempt_budget_seconds_including_export_parse": 180,
+  "entrypoint_sources_at_finalization": {
+    "lean/FCSolution.lean": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+    "lean/FCTargetDefinitions.lean": "8539d1c993050ee56f0440979399845c0267a37a44cbb5318147213c7db9bcfc",
+    "lean/SpecificationReadback.lean": "989e8af832cde2fb0e92925da7cd0cb63e230aa5dee9063cfb74ec75ad63ecdd",
+    "lean/FCAudit.lean": "2c31f3b15914d2be02ccc27d3f49c6ebc71fec07a8b8b17de392c1c1942f6460",
+    "lean/Challenge.lean": "ecd544fd189893b5595652f87fdd2adbc728f6e453df3226cec6ce5d0bd35fea",
+    "leanWithoutComparator/FCSolution.lean": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+    "leanWithoutComparator/FCTargetDefinitions.lean": "8539d1c993050ee56f0440979399845c0267a37a44cbb5318147213c7db9bcfc",
+    "leanWithoutComparator/SpecificationReadback.lean": "989e8af832cde2fb0e92925da7cd0cb63e230aa5dee9063cfb74ec75ad63ecdd",
+    "leanWithoutComparator/FCAudit.lean": "2c31f3b15914d2be02ccc27d3f49c6ebc71fec07a8b8b17de392c1c1942f6460"
+  }
+}

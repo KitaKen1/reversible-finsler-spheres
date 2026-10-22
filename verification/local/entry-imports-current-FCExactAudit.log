@@ -1,0 +1,19 @@
+{"caption":"","data":"PASS exact FC target: ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics; axioms = [propext,\n Classical.choice,\n Quot.sound]","endPos":{"column":7,"line":11},"fileName":"[temporary-output]/FCExactAudit.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":11},"severity":"information"}
+        3.94 real         1.76 user         2.17 sys
+          1867972608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              171665  page reclaims
+                  75  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 598  involuntary context switches
+         14292196705  instructions retired
+          7986635557  cycles elapsed
+           502073304  peak memory footprint

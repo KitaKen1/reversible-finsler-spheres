@@ -1,0 +1,13 @@
+PASS ReversibleFinslerSphereFC.infinitely_many_prime_closed_geodesics: [propext, Classical.choice, Quot.sound]
+PASS ReversibleFinslerSphereFC.variational_form: [propext, Classical.choice, Quot.sound]
+PASS Finsler.UFFillRel.reversible_sphere_assertion: [propext, Classical.choice, Quot.sound]
+PASS Finsler.UFFillRel.ordinary_sphere_assertion: [propext, Classical.choice, Quot.sound]
+theorem ReversibleFinslerSphereFC.infinitely_many_prime_closed_geodesics : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (F : Finsler.Geometry.ReversibleMetric n), (ReversibleFinslerSphereFC.PrimeClosedGeodesicImages F).Infinite :=
+fun n hn F =>
+  Eq.mpr (id (congrArg (fun _a => _a.Infinite) (ReversibleFinslerSphereFC.primeClosedGeodesicImages_eq F)))
+    (Finsler.UFFillRel.ordinary_sphere_assertion n hn F)
+theorem ReversibleFinslerSphereFC.variational_form : ∀ (n : ℕ),
+  3 ≤ n → ∀ (F : Finsler.Geometry.ReversibleMetric n), (Finsler.Geodesics.primeImages F).Infinite :=
+fun n hn F => Finsler.UFFillRel.reversible_sphere_assertion n hn F

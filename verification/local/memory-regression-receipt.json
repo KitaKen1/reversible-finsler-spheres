@@ -1,0 +1,133 @@
+{
+  "kind": "incremental-memory-regression",
+  "clean_build": false,
+  "kernel_replay": "not run",
+  "status": "pass",
+  "checks": [
+    {
+      "module": "Finsler.Loop.NativeSequentialSuffixMiddle",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "abd8b4cf00ed548e3543ebe30585e1a2565f6cc9f769cc46798552c94177c847",
+      "seconds": 5.671,
+      "log": "verification/local/memory-lean-Finsler.Loop.NativeSequentialSuffixMiddle.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Finsler.Loop.NativeSequentialTripleComparison",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "2afeb415157d48bc5a621d85c2f9c47de30a6c40d61722d9d49cb2afe11f1b1d",
+      "seconds": 1.663,
+      "log": "verification/local/memory-lean-Finsler.Loop.NativeSequentialTripleComparison.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCTargetDefinitions",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+      "seconds": 8.156,
+      "log": "verification/local/memory-lean-FCTargetDefinitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCSolution",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+      "seconds": 11.349,
+      "log": "verification/local/memory-lean-FCSolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCExactSolution",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "66b1bc0d7aee5871a53734aed9f804f0e44438571d691edb9e87d1e89f591231",
+      "seconds": 6.065,
+      "log": "verification/local/memory-lean-FCExactSolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCExactAudit",
+      "variant": "lean",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "738a880d48cef1f720ff44d398b10af2b45b55f5f11576392a4d16fb96ac9522",
+      "seconds": 5.406,
+      "log": "verification/local/memory-lean-FCExactAudit.log",
+      "log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35"
+    },
+    {
+      "module": "Finsler.Loop.NativeSequentialSuffixMiddle",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "abd8b4cf00ed548e3543ebe30585e1a2565f6cc9f769cc46798552c94177c847",
+      "seconds": 5.78,
+      "log": "verification/local/memory-leanWithoutComparator-Finsler.Loop.NativeSequentialSuffixMiddle.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "Finsler.Loop.NativeSequentialTripleComparison",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "2afeb415157d48bc5a621d85c2f9c47de30a6c40d61722d9d49cb2afe11f1b1d",
+      "seconds": 1.71,
+      "log": "verification/local/memory-leanWithoutComparator-Finsler.Loop.NativeSequentialTripleComparison.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCTargetDefinitions",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+      "seconds": 2.53,
+      "log": "verification/local/memory-leanWithoutComparator-FCTargetDefinitions.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCSolution",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+      "seconds": 5.465,
+      "log": "verification/local/memory-leanWithoutComparator-FCSolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCExactSolution",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "66b1bc0d7aee5871a53734aed9f804f0e44438571d691edb9e87d1e89f591231",
+      "seconds": 5.971,
+      "log": "verification/local/memory-leanWithoutComparator-FCExactSolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FCExactAudit",
+      "variant": "leanWithoutComparator",
+      "status": "pass",
+      "exit_code": 0,
+      "source_sha256": "738a880d48cef1f720ff44d398b10af2b45b55f5f11576392a4d16fb96ac9522",
+      "seconds": 5.408,
+      "log": "verification/local/memory-leanWithoutComparator-FCExactAudit.log",
+      "log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35"
+    }
+  ],
+  "core_source_manifest_sha256": "ed034e9df2c7b4969b49aa64b5a0bbf0a50e3223c4af97de5f06b9ef38eaaba4",
+  "memory_limit_MiB": 4096,
+  "started_utc": "2026-10-21T14:24:07Z",
+  "finished_utc": "2026-10-21T14:25:12Z",
+  "temporary_products_removed": true
+}

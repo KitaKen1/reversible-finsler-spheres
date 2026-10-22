@@ -1,0 +1,20 @@
+Checking cached closure: Core
+Cached closure is not current; using the full serial build
+[1/2] Core
+✖ [2/2] Building Core (265ms)
+trace: .> LEAN_PATH=[temporary-project]/.lake/build/lib/lean /Users/kenta/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean [temporary-project]/Core.lean -o [temporary-project]/.lake/build/lib/lean/Core.olean -i [temporary-project]/.lake/build/lib/lean/Core.ilean -c [temporary-project]/.lake/build/ir/Core.c --setup [temporary-project]/.lake/build/ir/Core.setup.json --json
+error: Core.lean:4:2: Type mismatch
+  True.intro
+has type
+  True
+but is expected to have type
+  False
+Some required targets logged failures:
+- Core
+error: build failed
+Traceback (most recent call last):
+  File "[workspace]/forgithub/scripts/build-serial.py", line 66, in <module>
+    subprocess.run(["lake", "--log-level=error", "build", "+" + name + ":olean"],
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lake', '--log-level=error', 'build', '+Core:olean']' returned non-zero exit status 1.

@@ -1,0 +1,61 @@
+{
+  "kind": "hosted-exact-fc-target-comparator",
+  "repository": "KitaKen1/ci-test-sandbox",
+  "branch": "codex/finsler-fc-target-20261021",
+  "run_id": 39700419746,
+  "run_attempt": 1,
+  "job_id": 119568016498,
+  "url": "https://github.com/KitaKen1/ci-test-sandbox/actions/runs/39700419746",
+  "tested_code_commit": "8522da6e32808f4d35a3a6a056fcb2bea8b9fd46",
+  "conclusion": "success",
+  "runner": "ubuntu-24.04",
+  "proof_build": "incremental after Lake trace validation of 2001 cached project modules",
+  "cli": "unmodified pinned upstream Comparator",
+  "sandbox": "real Linux landrun",
+  "builtin_kernel_replay": "pass; Lean default kernel accepts the solution",
+  "target": "ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics",
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "artifact_id": 12394050658,
+  "artifact_zip_sha256": "cd06b3ffb28865a1f4a33ddad7b5feb45171139d6623b543d7e9f036c821a6e4",
+  "artifact_files_sha256": {
+    "fc-build-cache.json": "63f0d6f0b8b855396fff5a52595c8d575d2a5ee003c834ce116226135b0d6ed8",
+    "fc-checker-install.log": "003307a61dc079009ccebc21bd7394e2c39a6b29e80df54479e8e2641343f8c6",
+    "fc-runner-resources.log": "f52376d448f99c311e6faae90bc2c7200640670645a096b40b1afcebfb414a8e",
+    "fc-target-axioms.log": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+    "fc-target-build.log": "2770a003fb76962b33ab19b8e97ea9992f6cd9a834bc0de13c42266e370f3168",
+    "fc-target-cache-plan.json": "e5e5be5548ad389c78390cc3fd0460bb9583326c3fb3bd0c30fc433460e7c87d",
+    "fc-target-comparator.log": "93d36be6c9c08c85e64ed45fca631752f95be33427192fdbfd6fb9abf22f15b0"
+  },
+  "observed_utc": "2026-10-22T00:54:47Z",
+  "fc_source_sha256": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+  "core_source_manifest_sha256": "ed034e9df2c7b4969b49aa64b5a0bbf0a50e3223c4af97de5f06b9ef38eaaba4",
+  "checker_pins": {
+    "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+    "comparator_repository": "https://github.com/leanprover/comparator",
+    "comparator_commit": "fd5d5bcf14177b187f66d4502071268d877887c3",
+    "lean4export_repository": "https://github.com/leanprover/lean4export",
+    "lean4export_commit": "66f1fb4bc256072069767fce52d39480e4524869",
+    "landrun_repository": "https://github.com/Zouuup/landrun",
+    "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "upstream_fc_submission": null,
+    "publication_commit": null
+  },
+  "comparator_and_post_audit_step_seconds": 812,
+  "hosted_source_build_seconds": 23,
+  "completed_utc": "2026-10-22T00:54:02Z",
+  "entry_sources_sha256": {
+    "lean/FCExactChallenge.lean": "f108e70a031b281373ef7b581726835bde36b79dbe63f28705b02dbba6558088",
+    "lean/FCExactSolution.lean": "8b6ef7f4cb3ba54ef6bbdeb3e0f7347df10635b80c5d521c1b29f99406bbc2fc",
+    "lean/FCExactAudit.lean": "688c6fdb9fdd7874afe22cc4c25d0cf930f36891d294ac3d262b1b86eb798f33",
+    "lean/FCTargetDefinitions.lean": "f1552a3d37275fab9c7952dd150877c3745babb4868be41677a0d591270906cb",
+    "lean/FCSolution.lean": "62a63d0e86483329403e9fdd660ce9686d57593ba332cb97bb4a65bdb32a6f92",
+    "lean/comparator-fc.json": "d1ea7d1e52db3c20b8ed1f43b364ea7028da9e1011e3ad4a45ae394e08677871",
+    "lean/comparator/install-tools.sh": "8e70d213e2e4ad04bdacd1dab0dcf2f732192fff29a5dfa78d40215a9f45e531",
+    "lean/comparator/run-fc-check.sh": "981983eead3a2b753266b9058e2e4873496db43b9b34550f1a672f14189a4b00",
+    "scripts/generate-fc-target.py": "c838f39ba8325113df7d3ff2c6fcd7de954f1eff88c3c84d2be45d7696429ed0"
+  }
+}

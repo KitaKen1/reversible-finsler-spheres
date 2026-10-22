@@ -1,0 +1,15 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   59G   14G  82% /
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       859Mi       4.7Gi        45Mi       2.5Gi       6.9Gi
+Swap:          3.0Gi          0B       3.0Gi
+11560736	/usr/local/lib/android
+6022308	/usr/share/dotnet
+3833280	/usr/local/.ghcup
+1389692	/opt/hostedtoolcache/CodeQL
+Available disk after cleanup: 36502968 KiB
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   37G   35G  52% /
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       875Mi       4.3Gi        46Mi       2.9Gi       6.9Gi
+Swap:          3.0Gi          0B       3.0Gi

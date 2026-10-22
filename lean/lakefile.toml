@@ -1,0 +1,103 @@
+name = "reversibleFinsler"
+version = "0.1.0"
+defaultTargets = ["FCExactSolution", "FCExactAudit"]
+moreLeanArgs = ["-M4096", "-j2", "-DElab.async=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "f6090c7095e1e56b3464c1daba5f24631f1290d2"
+
+[[lean_lib]]
+name = "Finsler"
+
+[[require]]
+name = "TauCeti"
+git = "https://github.com/TauCetiProject/TauCeti"
+rev = "d5a37097e93f6289425d25632df6c8bf00d749c0"
+
+[[require]]
+name = "lean-pool"
+git = "https://github.com/Vilin97/lean-pool.git"
+rev = "01db1d7049cf9668bda1e9e106875ee1278b43e6"
+
+[[lean_lib]]
+name = "FCTargetDefinitions"
+
+[[lean_lib]]
+name = "FCSolution"
+
+[[lean_lib]]
+name = "FCAudit"
+
+[[lean_lib]]
+name = "SpecificationReadback"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "FCImplications"
+
+[[lean_lib]]
+name = "HingstonArithmetic"
+
+[[lean_lib]]
+name = "FCTwoSphere"
+
+[[lean_lib]]
+name = "SurfaceMinimax"
+
+[[lean_lib]]
+name = "HingstonBlocks"
+
+[[lean_lib]]
+name = "HingstonConnectors"
+
+[[lean_lib]]
+name = "HingstonPause"
+
+[[lean_lib]]
+name = "HingstonFilling"
+
+[[lean_lib]]
+name = "SurfaceLocalHomology"
+
+[[lean_lib]]
+name = "SurfacePolygonHomology"
+
+[[lean_lib]]
+name = "SurfaceMorseData"
+
+[[lean_lib]]
+name = "SurfaceSpectralDisk"
+
+[[lean_lib]]
+name = "SurfacePhaseGeometry"
+
+[[lean_lib]]
+name = "SurfaceIteration"
+
+[[lean_lib]]
+name = "SurfaceIterationHomology"
+
+[[lean_lib]]
+name = "SurfaceIterationEquivalence"
+
+[[lean_lib]]
+name = "SurfaceChainIndex"
+
+[[lean_lib]]
+name = "SurfaceZeroMeanIndex"
+
+[[lean_lib]]
+name = "SurfaceOrbitModel"
+
+[[lean_lib]]
+name = "FCExactSolution"
+
+[[lean_lib]]
+name = "FCExactAudit"
+
+[[lean_lib]]
+name = "FCExactChallenge"

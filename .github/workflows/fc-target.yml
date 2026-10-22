@@ -1,0 +1,98 @@
+name: Exact FC target and Comparator
+
+on:
+  push:
+    branches: ['main', 'codex/finsler-fc-target-*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: exact-fc-target-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  exact-fc-target:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check sealed sources, proof parity and exact FC definitions
+        run: python3 scripts/check-package.py
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "COMPARATOR_TOOLS=$RUNNER_TEMP/finsler-comparator-tools" >> "$GITHUB_ENV"
+      - name: Prepare disk space on the disposable hosted runner
+        run: bash scripts/prepare-ci-runner.sh "${{ runner.environment }}"
+      - name: Fetch pinned dependency caches
+        run: python3 scripts/fetch-target-cache.py --project lean
+      - name: Restore checked project build artifacts
+        id: proof-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        continue-on-error: true
+        with:
+          path: |
+            lean/.lake/build
+            lean/.lake/packages/TauCeti/.lake/build
+            lean/.lake/packages/lean-pool/.lake/build
+          key: finsler-proof-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean/lean-toolchain', 'lean/lake-manifest.json', 'lean/lakefile.toml') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            finsler-proof-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean/lean-toolchain', 'lean/lake-manifest.json', 'lean/lakefile.toml') }}-
+      - name: Record build cache provenance
+        env:
+          FC_BUILD_CACHE_MATCHED_KEY: ${{ steps.proof-cache.outputs.cache-matched-key }}
+        run: |
+          mkdir -p runtime-results
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          matched = os.environ.get('FC_BUILD_CACHE_MATCHED_KEY', '')
+          Path('runtime-results/fc-build-cache.json').write_text(json.dumps({
+              'restored_key': matched or None,
+              'build_mode': 'incremental; Lake validates traces' if matched else 'fresh project build',
+              'source_commit': os.environ['GITHUB_SHA']
+          }, indent=2) + '\n')
+          PY
+      - name: Build the independent FC reference first
+        run: python3 scripts/build-serial.py --project lean FCExactChallenge
+      - name: Build the exact FC solution and transitive axiom audit from source
+        id: build-proof
+        run: |
+          mkdir -p runtime-results
+          python3 scripts/build-serial.py --project lean --warm-target Finsler.Residual.FillRel FCExactSolution FCExactAudit 2>&1 | tee runtime-results/fc-target-build.log
+      - name: Preserve partial build artifacts after success or failure
+        if: ${{ always() && steps.build-proof.outcome != 'skipped' && steps.proof-cache.outputs.cache-primary-key != '' }}
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        continue-on-error: true
+        with:
+          path: |
+            lean/.lake/build
+            lean/.lake/packages/TauCeti/.lake/build
+            lean/.lake/packages/lean-pool/.lake/build
+          key: ${{ steps.proof-cache.outputs.cache-primary-key }}
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+      - name: Install immutable Comparator, exporter and landrun revisions
+        run: bash lean/comparator/install-tools.sh 2>&1 | tee runtime-results/fc-checker-install.log
+      - name: Compare exact FC target, audit axioms and replay Lean kernel
+        run: bash lean/comparator/run-fc-check.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: exact-fc-target-${{ github.run_id }}-${{ github.run_attempt }}
+          path: runtime-results/
+          if-no-files-found: warn
+          retention-days: 90

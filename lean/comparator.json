@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "FCSolution",
+  "theorem_names": [
+    "ReversibleFinslerSphereFC.infinitely_many_prime_closed_geodesics",
+    "ReversibleFinslerSphereFC.variational_form"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}

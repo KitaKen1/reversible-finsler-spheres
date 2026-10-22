@@ -1,0 +1,19 @@
+2026-10-21T18:40:48.5160599Z [2002/2005] Finsler.Residual.FillRel
+2026-10-21T18:40:56.3200980Z ✔ [5911/5911] Built Finsler.Residual.FillRel (4.0s)
+2026-10-21T18:40:56.3967107Z Build completed successfully (5911 jobs).
+2026-10-21T18:40:56.4387727Z [2003/2005] FCSolution
+2026-10-21T18:41:51.3345208Z ✖ [5913/5913] Building FCSolution (51s)
+2026-10-21T18:41:51.3391049Z trace: .> LEAN_PATH=/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/TauCeti/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/packages/lean-pool/.lake/build/lib/lean:/home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/lean -M4096 -j2 -DElab.async=false /home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/FCSolution.lean -o /home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/build/lib/lean/FCSolution.olean -i /home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/build/lib/lean/FCSolution.ilean -c /home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/build/ir/FCSolution.c --setup /home/runner/work/ci-test-sandbox/ci-test-sandbox/lean/.lake/build/ir/FCSolution.setup.json --json
+2026-10-21T18:41:51.3399683Z info: stderr:
+2026-10-21T18:41:51.3456310Z libc++abi: terminating due to uncaught exception of type lean::memory_exception: excessive memory consumption detected at 'interpreter' (potential solution: increase memory consumption threshold)
+2026-10-21T18:41:51.3457724Z error: Lean exited with code 134
+2026-10-21T18:41:51.3458148Z Some required targets logged failures:
+2026-10-21T18:41:51.3458549Z - FCSolution
+2026-10-21T18:41:51.3458887Z error: build failed
+2026-10-21T18:41:51.6317998Z Traceback (most recent call last):
+2026-10-21T18:41:51.6319638Z   File "/home/runner/work/ci-test-sandbox/ci-test-sandbox/scripts/build-serial.py", line 39, in <module>
+2026-10-21T18:41:51.6321406Z     subprocess.run(["lake", "--log-level=error", "build", "+" + name + ":olean"],
+2026-10-21T18:41:51.6322184Z   File "/usr/lib/python3.12/subprocess.py", line 571, in run
+2026-10-21T18:41:51.6376719Z     raise CalledProcessError(retcode, process.args,
+2026-10-21T18:41:51.6378088Z subprocess.CalledProcessError: Command '['lake', '--log-level=error', 'build', '+FCSolution:olean']' returned non-zero exit status 1.
+2026-10-21T18:41:51.6721436Z ##[error]Process completed with exit code 1.

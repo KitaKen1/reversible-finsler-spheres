@@ -1,0 +1,51 @@
+upstream-ams-attributes: pass (1.438s)
+
+upstream-category-attributes: pass (1.863s)
+
+four-fc-statements: pass (7.86s)
+[temporary-build]/statements/ReversibleFinslerSpheres.lean:87:8: warning: declaration uses `sorry`
+[temporary-build]/statements/ReversibleFinslerSpheres.lean:97:8: warning: declaration uses `sorry`
+[temporary-build]/statements/ReversibleFinslerSpheres.lean:106:8: warning: declaration uses `sorry`
+[temporary-build]/statements/ReversibleFinslerSpheres.lean:114:8: warning: declaration uses `sorry`
+
+standalone-statement-and-metadata-readback: pass (8.942s)
+PASS: four genuine FC research-solved / AMS 53 attributes
+
+proof-target-definitions: pass (3.823s)
+
+definition-correspondence-and-axioms: pass (4.86s)
+PASS: ReversibleFinslerSphereCorrespondence.energy_eq; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.stationary_iff; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.isRiemannian_iff; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.primeImages_eq; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.infinite_primeImages_iff; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.finsler_assertion_iff; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.riemannian_assertion_iff; axioms = [propext, Classical.choice, Quot.sound]
+PASS: ReversibleFinslerSphereCorrespondence.round_isRiemannian; axioms = [propext, Classical.choice, Quot.sound]
+
+higher-dimensional-solution: pass (14.788s)
+
+proved-implications: pass (8.649s)
+
+implications-readback-and-axioms: pass (13.754s)
+PASS ReversibleFinslerSphereFC.riemannian_of_finsler_at_dimension: [propext, Classical.choice, Quot.sound]
+PASS ReversibleFinslerSphereFC.riemannian_infinitely_many_prime_closed_geodesics_of_three_le: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ReversibleFinslerSphereFC.finsler_all_dimensions_of_two_sphere: [propext, Classical.choice, Quot.sound]
+PASS ReversibleFinslerSphereFC.finsler_all_dimensions_iff_two_sphere: [propext, Classical.choice, Quot.sound]
+PASS ReversibleFinslerSphereFC.riemannian_all_dimensions_of_finsler: [propext, Classical.choice, Quot.sound]
+PASS ReversibleFinslerSphereFC.riemannian_all_dimensions_of_two_sphere: [propext, Classical.choice, Quot.sound]
+theorem ReversibleFinslerSphereFC.finsler_all_dimensions_of_two_sphere : FinslerTwoSphereAssertion →
+  FinslerAllDimensionsAssertion :=
+fun h2 n hn F =>
+  if h : n = 2 then
+    Eq.ndrec (motive := fun n =>
+      2 ≤ n → ∀ (F : Finsler.Geometry.ReversibleMetric n), (PrimeClosedGeodesicImages F).Infinite) (fun hn F => h2 F)
+      (Eq.symm h) hn F
+  else
+    infinitely_many_prime_closed_geodesics n
+      (Decidable.byContradiction fun a => finsler_all_dimensions_of_two_sphere._proof_1 n hn h a) F
+theorem ReversibleFinslerSphereFC.riemannian_all_dimensions_of_two_sphere : FinslerTwoSphereAssertion →
+  RiemannianAllDimensionsAssertion :=
+fun h2 => riemannian_all_dimensions_of_finsler (finsler_all_dimensions_of_two_sphere h2)

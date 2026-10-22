@@ -1,0 +1,3 @@
+PASS exact FC target: ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics; axioms = [propext,
+ Classical.choice,
+ Quot.sound]

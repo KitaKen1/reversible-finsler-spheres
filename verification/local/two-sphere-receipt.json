@@ -1,0 +1,491 @@
+{
+  "kind": "incremental-two-sphere-criteria-and-axiom-audit",
+  "started_utc": "2026-10-19T13:19:31Z",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "source_files_matched": 2056,
+  "clean_build": false,
+  "full_two_sphere_assertion_proved": false,
+  "proof_scope": "Finite-spectrum arithmetic, continuous embedded loop-block families with exact energy, uniform deficits and actual relative sublevel maps, continuous short-connector families, energy-decreasing diagonal pause removal, actual enlarged interval-base families and homology vanishing by an explicit slide, exact iterate centers, nonzero local critical classes from coordinate and energy data with excision, split injection from actual polygon to Sobolev loop critical homology, exact critical polygon models and actual local splitting charts of every closed geodesic, small maximal disks and embedded nonzero loop classes from local product normal forms, spectral disk construction from a reduced kernel maximum and exact nullity loss under phase restriction, actual sampled phase curves and nonlinear transverse charts, identification of the genuine transverse Hessian and its degenerate splitting, actual transverse iteration with kernel equivalence and reduced-maximum transport, maximal disks along a bounded-gap odd nullity progression, actual local energy retractions and injections on point-critical homology under index/nullity preservation, construction of a stable base iterate for zero mean index and actual homology injections along an odd monodromy progression, energy-decreasing local deformations onto the actual repeated polygons, point-critical iteration isomorphisms and triviality of the base-period rotation action under index/nullity preservation, cutting periodic chain variations with a fixed two-edge cost, bounded index forcing all iterate indices to vanish, zero mean implying zero index for every geodesic iterate, positive index implying eventual growth above every bound, and original-geodesic iteration isomorphisms with original-period rotation action without stabilizing the base, a concrete invariant local repetition projection descending through the period-rotation mapping torus and proving fibre injectivity along an original-geodesic zero-mean progression, critical-value extraction from nonzero repeated local classes, and conditional criteria; 288 public theorems per variant",
+  "additional_dependency_sources_sha256": {
+    "TauCeti.AlgebraicTopology.Singular.Empty": "b61088cbd7264aa10ccda5c99f9550a6b1507be2aeba17cd3b94fb9c514d3f4c",
+    "TauCeti.AlgebraicTopology.Singular.DiskSphere": "0c40a901d895866e2cd8bd5ccc16e28b5970b2d624b25a978ae7f65c5e673716",
+    "TauCeti.Topology.Homotopy.HomotopyEquiv": "1e0916254310fdb08450d4321db7a32fd48666039c30d6478f2ee5b94d60376d",
+    "TauCeti.Topology.LocallyConnected": "968d6d3651f9229d44ff6e62c30f3ad058f0dc1d974d6f553fea956dd896db23",
+    "TauCeti.Topology.JordanCurve.Basic": "c03dc70beeea0286c67059f8116a736ccaede585da6ef559874371273638f21e",
+    "TauCeti.Topology.Homotopy.PuncturedStarConvex": "ca1bc30ae061a200a204857b4360ed4e692a3adab930bb4cb05cb1d237c4cf53",
+    "TauCeti.GroupTheory.Perm.Basic": "8bb6cf6ddf8f3d41b7b5dbaa4c29be3890427213694496f1561d0e16d1586b6e",
+    "TauCeti.Topology.Homeomorph.Semiconj": "1191a942372859a103594abf21fbd9c0023f84f83f07a720c2bc628c5331a528",
+    "TauCeti.Topology.Instances.AddCircle.Defs": "c403955e00ba1588a7eaa81bb88a5f35f50a70d5a1cbcf8f080435e7c1d3dfc2",
+    "TauCeti.Topology.MappingTorus": "4594110f8a5b5634f0ea9dcdb4319ed848fbe455f9fa8cec55a18b0b60c59c11"
+  },
+  "inputs_sha256": {
+    "lean/HingstonArithmetic.lean": "17321287d32716ba83a15e6641cb6d2b8c44248ee90f7d647dd7b37bcbafc5d6",
+    "lean/HingstonBlocks.lean": "6ce3e6c5dafeeea83ed641386c5d029a14a64f00560634ae064c1a47b3498d3b",
+    "lean/HingstonConnectors.lean": "8d3f2d407197d5d8bf3c738fe948ba22ff97e6193e20fa69d59e7c132682730c",
+    "lean/HingstonPause.lean": "cde61364c11a4aa29ad951e8a48f66c547ca0987a305e2f51e834abfc782a15f",
+    "lean/HingstonFilling.lean": "5eac8cdb1453334d18c03b4b473323551fa54c145bdbb137a8e4fa91ae7d6c77",
+    "lean/SurfaceLocalHomology.lean": "1f6b01916c0171d7425da0e1e28345017e4835039bcd2ff3e5e659cfee84c997",
+    "lean/SurfacePolygonHomology.lean": "72ea758aefa897414c5f08f836d31adbd64ea640cbd720797d7af0a317fb28e9",
+    "lean/SurfaceMorseData.lean": "3087eb907b215569b932e357d2f5b39930eaf14c2b67cc6e47e7b03107f8137e",
+    "lean/SurfaceSpectralDisk.lean": "8c66edc778998894d39a6381e1d182234a353b79c2ccd97b16328b45028887b7",
+    "lean/SurfacePhaseGeometry.lean": "d29d026c6d5a940a4847d4c9f278f9d16a222e2d7a31b579741668acc612f312",
+    "lean/SurfaceIteration.lean": "81bb128f6f90d97edd168347118c79208411c521630d8db03732d260ae964caf",
+    "lean/SurfaceIterationHomology.lean": "5de1a1c0bfa884773448ecabd1d06b08be7f8b10ca60db466a2bd96f788a7a20",
+    "lean/SurfaceIterationEquivalence.lean": "50447e7365ba5917712dd8c7c85f6bdfbc505c431104e5658b1878573e685a07",
+    "lean/SurfaceChainIndex.lean": "fa2fda65e2495ee84625844a4da205bbf1f04aa1e05a481b35b730c0e3719be3",
+    "lean/SurfaceZeroMeanIndex.lean": "7d93efd3bb92558e3cf7d2e4d85f3d07d3d9513b62969ba7a01c3e82d59d9af5",
+    "lean/SurfaceOrbitModel.lean": "d95ac179d32bffd8f309aff52f0cb1bd41a9cc765ceaab7879433731a34beb0d",
+    "lean/FCTargetDefinitions.lean": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+    "lean/SurfaceMinimax.lean": "e5a7f612f26c3c8460d67dae8411bb254f941e19522ca7fe14889f374179a84c",
+    "lean/FCTwoSphere.lean": "c97388f39f72f1be74c05224abfcf8534bd1e76563aa794ab9b753f9c2f68f6e",
+    "leanWithoutComparator/HingstonArithmetic.lean": "17321287d32716ba83a15e6641cb6d2b8c44248ee90f7d647dd7b37bcbafc5d6",
+    "leanWithoutComparator/HingstonBlocks.lean": "6ce3e6c5dafeeea83ed641386c5d029a14a64f00560634ae064c1a47b3498d3b",
+    "leanWithoutComparator/HingstonConnectors.lean": "8d3f2d407197d5d8bf3c738fe948ba22ff97e6193e20fa69d59e7c132682730c",
+    "leanWithoutComparator/HingstonPause.lean": "cde61364c11a4aa29ad951e8a48f66c547ca0987a305e2f51e834abfc782a15f",
+    "leanWithoutComparator/HingstonFilling.lean": "5eac8cdb1453334d18c03b4b473323551fa54c145bdbb137a8e4fa91ae7d6c77",
+    "leanWithoutComparator/SurfaceLocalHomology.lean": "1f6b01916c0171d7425da0e1e28345017e4835039bcd2ff3e5e659cfee84c997",
+    "leanWithoutComparator/SurfacePolygonHomology.lean": "72ea758aefa897414c5f08f836d31adbd64ea640cbd720797d7af0a317fb28e9",
+    "leanWithoutComparator/SurfaceMorseData.lean": "3087eb907b215569b932e357d2f5b39930eaf14c2b67cc6e47e7b03107f8137e",
+    "leanWithoutComparator/SurfaceSpectralDisk.lean": "8c66edc778998894d39a6381e1d182234a353b79c2ccd97b16328b45028887b7",
+    "leanWithoutComparator/SurfacePhaseGeometry.lean": "d29d026c6d5a940a4847d4c9f278f9d16a222e2d7a31b579741668acc612f312",
+    "leanWithoutComparator/SurfaceIteration.lean": "81bb128f6f90d97edd168347118c79208411c521630d8db03732d260ae964caf",
+    "leanWithoutComparator/SurfaceIterationHomology.lean": "5de1a1c0bfa884773448ecabd1d06b08be7f8b10ca60db466a2bd96f788a7a20",
+    "leanWithoutComparator/SurfaceIterationEquivalence.lean": "50447e7365ba5917712dd8c7c85f6bdfbc505c431104e5658b1878573e685a07",
+    "leanWithoutComparator/SurfaceChainIndex.lean": "fa2fda65e2495ee84625844a4da205bbf1f04aa1e05a481b35b730c0e3719be3",
+    "leanWithoutComparator/SurfaceZeroMeanIndex.lean": "7d93efd3bb92558e3cf7d2e4d85f3d07d3d9513b62969ba7a01c3e82d59d9af5",
+    "leanWithoutComparator/SurfaceOrbitModel.lean": "d95ac179d32bffd8f309aff52f0cb1bd41a9cc765ceaab7879433731a34beb0d",
+    "leanWithoutComparator/FCTargetDefinitions.lean": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+    "leanWithoutComparator/SurfaceMinimax.lean": "e5a7f612f26c3c8460d67dae8411bb254f941e19522ca7fe14889f374179a84c",
+    "leanWithoutComparator/FCTwoSphere.lean": "c97388f39f72f1be74c05224abfcf8534bd1e76563aa794ab9b753f9c2f68f6e",
+    "verification/TwoSphereReadback.lean": "8ab47c54ee3542235937ba54db1d2f9fd1f4310aabe603795a4e60dd58b62a42",
+    "scripts/check-two-sphere.py": "2df831b88c71177f712f1220f261a20578ed80572cf996d1c475739bc9aa84ff",
+    "verification/proof-source-manifest.json": "5d8e93d7da949058b16360d9e49b01457f4a5d01358fe966b880d96dacee9268"
+  },
+  "checks": [
+    {
+      "check": "lean/dependency/TauCeti.AlgebraicTopology.Singular.Empty",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.108,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.AlgebraicTopology.Singular.DiskSphere",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 6.002,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.931,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.LocallyConnected",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.158,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.JordanCurve.Basic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 4.048,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.Homotopy.PuncturedStarConvex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.203,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.GroupTheory.Perm.Basic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 4.399,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.Homeomorph.Semiconj",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.354,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.Instances.AddCircle.Defs",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.128,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/dependency/TauCeti.Topology.MappingTorus",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.562,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/HingstonArithmetic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.962,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/HingstonBlocks",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 23.824,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/HingstonConnectors",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 33.766,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/HingstonPause",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 26.125,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/HingstonFilling",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 16.769,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceLocalHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 11.504,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfacePolygonHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 13.193,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceMorseData",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 11.381,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceSpectralDisk",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.265,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfacePhaseGeometry",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 22.347,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceIteration",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 22.152,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceIterationHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 15.15,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceIterationEquivalence",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 17.422,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceChainIndex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 9.944,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceZeroMeanIndex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.996,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceOrbitModel",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.488,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 7.392,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/SurfaceMinimax",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 13.027,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/FCTwoSphere",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 16.346,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "lean/readback-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 34.369,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.AlgebraicTopology.Singular.Empty",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 6.162,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.AlgebraicTopology.Singular.DiskSphere",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 6.281,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.011,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.LocallyConnected",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.363,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.JordanCurve.Basic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 4.096,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.Homotopy.PuncturedStarConvex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.465,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.GroupTheory.Perm.Basic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.516,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.Homeomorph.Semiconj",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.49,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.Instances.AddCircle.Defs",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.913,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/dependency/TauCeti.Topology.MappingTorus",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.424,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/HingstonArithmetic",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 13.872,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/HingstonBlocks",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 21.461,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/HingstonConnectors",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 31.126,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/HingstonPause",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 25.289,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/HingstonFilling",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 15.622,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceLocalHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 8.774,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfacePolygonHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 9.681,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceMorseData",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 11.824,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceSpectralDisk",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 12.781,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfacePhaseGeometry",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 25.812,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceIteration",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 25.13,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceIterationHomology",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 16.58,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceIterationEquivalence",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 15.16,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceChainIndex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 9.287,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceZeroMeanIndex",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 13.869,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceOrbitModel",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 13.52,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 7.661,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/SurfaceMinimax",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 11.352,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/FCTwoSphere",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 14.117,
+      "sorry_warnings": 0
+    },
+    {
+      "check": "leanWithoutComparator/readback-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 22.143,
+      "sorry_warnings": 0
+    }
+  ],
+  "status": "pass",
+  "temporary_build_removed": true,
+  "finished_utc": "2026-10-19T13:32:00Z",
+  "log": "verification/local/two-sphere.log",
+  "log_sha256": "a33bb6921dd9b53337b9139ea9f367c18fdaf54e90fa86e40a27290762ffc764"
+}

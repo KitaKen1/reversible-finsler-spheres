@@ -1,0 +1,14 @@
+2026-10-22T00:30:46.9184634Z Checking cached closure: Finsler.Residual.FillRel
+2026-10-22T00:30:51.8187182Z Lake validated 2001 cached project modules; 4 serial modules remain
+2026-10-22T00:30:51.8187820Z [1/4] FCTargetDefinitions
+2026-10-22T00:30:55.3725588Z ✔ [2849/2849] Built FCTargetDefinitions (1.3s)
+2026-10-22T00:30:55.3760258Z Build completed successfully (2849 jobs).
+2026-10-22T00:30:55.4161957Z [2/4] FCSolution
+2026-10-22T00:31:02.1717414Z ✔ [5913/5913] Built FCSolution (3.8s)
+2026-10-22T00:31:02.1789147Z Build completed successfully (5913 jobs).
+2026-10-22T00:31:02.2188488Z [3/4] FCExactSolution
+2026-10-22T00:31:07.7655189Z ✔ [5914/5914] Built FCExactSolution (2.6s)
+2026-10-22T00:31:07.7711509Z Build completed successfully (5914 jobs).
+2026-10-22T00:31:07.8111018Z [4/4] FCExactAudit
+2026-10-22T00:31:12.2532146Z ✔ [5915/5915] Built FCExactAudit (1.5s)
+2026-10-22T00:31:12.2871343Z Build completed successfully (5915 jobs).

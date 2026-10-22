@@ -1,0 +1,93 @@
+{
+  "kind": "ci-entry-import-memory-regression",
+  "platform": "macOS arm64",
+  "memory_limit_MiB": 4096,
+  "threads": 2,
+  "Elab.async": false,
+  "outputs": [
+    "olean",
+    "ilean",
+    "c"
+  ],
+  "lake_import_artifacts": true,
+  "clean_build": false,
+  "legacy_local_result": "pass; Linux CI failed at the same entry with excessive memory consumption",
+  "legacy_ci_commit": "34da8dca82738a260105761ef3c38ffd908d5b6a",
+  "fc_source_unchanged_sha256": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+  "checks": [
+    {
+      "version": "legacy",
+      "module": "FCTargetDefinitions",
+      "status": "pass",
+      "max_resident_bytes": 2790178816,
+      "source_sha256": "59222533e50f2f93a35f05c53404382df567fd6fe184961a62aebb665193f3c7",
+      "log": "verification/local/entry-imports-legacy-FCTargetDefinitions.log",
+      "log_sha256": "2e12cc2d416fa8a06696edd14b14ff8e78fd7d9a39429200c6d24eda728381c8"
+    },
+    {
+      "version": "legacy",
+      "module": "FCSolution",
+      "status": "pass",
+      "max_resident_bytes": 3885891584,
+      "source_sha256": "a52c563a4147442e5a83cdc6ee20bd4b6b8c4f17f82bb4b4c60a9cca6b67333a",
+      "log": "verification/local/entry-imports-legacy-FCSolution.log",
+      "log_sha256": "e62419a8def0c0e2a741adf707239eaf0222e5b1adfa9cc480635ab11c08f770"
+    },
+    {
+      "version": "legacy",
+      "module": "FCExactSolution",
+      "status": "pass",
+      "max_resident_bytes": 3911663616,
+      "source_sha256": "66b1bc0d7aee5871a53734aed9f804f0e44438571d691edb9e87d1e89f591231",
+      "log": "verification/local/entry-imports-legacy-FCExactSolution.log",
+      "log_sha256": "27bad91ea538f43c8de3442d77506feca0b031e5a3d836dee46aed4f7f2b02ab"
+    },
+    {
+      "version": "legacy",
+      "module": "FCExactAudit",
+      "status": "pass",
+      "max_resident_bytes": 3894083584,
+      "source_sha256": "738a880d48cef1f720ff44d398b10af2b45b55f5f11576392a4d16fb96ac9522",
+      "log": "verification/local/entry-imports-legacy-FCExactAudit.log",
+      "log_sha256": "58f33654dbf669c738552091ee728d2edd7dea0ea16eebcc172e8899410aa0eb"
+    },
+    {
+      "version": "current",
+      "module": "FCTargetDefinitions",
+      "status": "pass",
+      "max_resident_bytes": 1332314112,
+      "source_sha256": "f1552a3d37275fab9c7952dd150877c3745babb4868be41677a0d591270906cb",
+      "log": "verification/local/entry-imports-current-FCTargetDefinitions.log",
+      "log_sha256": "6023c4093da38993a21d3bac0136df422657cb4a98bca2670a66767e93ee08b8"
+    },
+    {
+      "version": "current",
+      "module": "FCSolution",
+      "status": "pass",
+      "max_resident_bytes": 1861255168,
+      "source_sha256": "62a63d0e86483329403e9fdd660ce9686d57593ba332cb97bb4a65bdb32a6f92",
+      "log": "verification/local/entry-imports-current-FCSolution.log",
+      "log_sha256": "32c020f1061347f0046a189a7f60810ca6953de2ea519b5fbb6d7aa00fb0351c"
+    },
+    {
+      "version": "current",
+      "module": "FCExactSolution",
+      "status": "pass",
+      "max_resident_bytes": 1886339072,
+      "source_sha256": "8b6ef7f4cb3ba54ef6bbdeb3e0f7347df10635b80c5d521c1b29f99406bbc2fc",
+      "log": "verification/local/entry-imports-current-FCExactSolution.log",
+      "log_sha256": "622fe714ac96fafef034462a0dd0f634d926fd5fd21bca12d3b0d87773f2ce26"
+    },
+    {
+      "version": "current",
+      "module": "FCExactAudit",
+      "status": "pass",
+      "max_resident_bytes": 1867972608,
+      "source_sha256": "688c6fdb9fdd7874afe22cc4c25d0cf930f36891d294ac3d262b1b86eb798f33",
+      "log": "verification/local/entry-imports-current-FCExactAudit.log",
+      "log_sha256": "98ea4472fc52e265c4a8c0b7c1df371dbe0c814583a23f5d3e1acaeee2577b0b"
+    }
+  ],
+  "status": "pass",
+  "temporary_products_removed": true
+}

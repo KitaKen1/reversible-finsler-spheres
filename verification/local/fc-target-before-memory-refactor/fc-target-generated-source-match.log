@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "target": "ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics",
+  "fc_source_sha256": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+  "exact_mathematical_definitions_sha256": "f8d38dc68276bf70740ce43fb6e3ded846ddc6fe3da907a2544bceaac38fd04b",
+  "omitted_only": [
+    "FC metadata umbrella import (replaced by used Mathlib imports)",
+    "module/public visibility markers for the existing proof library",
+    "research-solved/AMS metadata attribute",
+    "other three theorem statements"
+  ],
+  "generated_files": [
+    "lean/FCExactChallenge.lean",
+    "lean/FCExactSolution.lean",
+    "lean/FCExactAudit.lean",
+    "leanWithoutComparator/FCExactSolution.lean",
+    "leanWithoutComparator/FCExactAudit.lean"
+  ]
+}

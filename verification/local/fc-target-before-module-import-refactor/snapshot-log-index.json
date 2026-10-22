@@ -1,0 +1,76 @@
+{
+  "receipt_preserved_verbatim": true,
+  "note": "The receipt retains its original log paths; resolve each log by filename in this snapshot directory. The index verifies the original log hash.",
+  "logs": [
+    {
+      "original_log_path": "verification/local/fc-target-generated-source-match.log",
+      "snapshot_log": "fc-target-generated-source-match.log",
+      "sha256": "24bb643403ba682c0631e8f08e8d97651fe6c4c7d7ef44d667ad6946de6f390b"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-lean-FCExactChallenge.log",
+      "snapshot_log": "fc-target-lean-FCExactChallenge.log",
+      "sha256": "2611dc0ed08dfc988fad559a8bbc15d7df35033432645d3a0419344d964b6bec"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-lean-FCTargetDefinitions.log",
+      "snapshot_log": "fc-target-lean-FCTargetDefinitions.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-lean-FCSolution.log",
+      "snapshot_log": "fc-target-lean-FCSolution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-lean-FCExactSolution.log",
+      "snapshot_log": "fc-target-lean-FCExactSolution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-lean-FCExactAudit.log",
+      "snapshot_log": "fc-target-lean-FCExactAudit.log",
+      "sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-leanWithoutComparator-FCTargetDefinitions.log",
+      "snapshot_log": "fc-target-leanWithoutComparator-FCTargetDefinitions.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-leanWithoutComparator-FCSolution.log",
+      "snapshot_log": "fc-target-leanWithoutComparator-FCSolution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-leanWithoutComparator-FCExactSolution.log",
+      "snapshot_log": "fc-target-leanWithoutComparator-FCExactSolution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-leanWithoutComparator-FCExactAudit.log",
+      "snapshot_log": "fc-target-leanWithoutComparator-FCExactAudit.log",
+      "sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-export-FCExactChallenge.log",
+      "snapshot_log": "fc-target-export-FCExactChallenge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-export-FCExactSolution.log",
+      "snapshot_log": "fc-target-export-FCExactSolution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-comparator-structure-and-axioms.log",
+      "snapshot_log": "fc-target-comparator-structure-and-axioms.log",
+      "sha256": "cc1db8bb7b6159c7148130fd2990864ea2e7bb7b961e51df500a4148541092fe"
+    },
+    {
+      "original_log_path": "verification/local/fc-target-comparator-builtin-kernel-replay.log",
+      "snapshot_log": "fc-target-comparator-builtin-kernel-replay.log",
+      "sha256": "8c8b16ae0e6fea045b04eedca3fd1cec4044aa0fc1161a243017178fe8f7027a"
+    }
+  ]
+}

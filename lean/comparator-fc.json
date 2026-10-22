@@ -1,0 +1,10 @@
+{
+  "challenge_module": "FCExactChallenge",
+  "solution_module": "FCExactSolution",
+  "theorem_names": [
+    "ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "enable_nanoda": false
+}

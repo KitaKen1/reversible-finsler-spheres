@@ -1,0 +1,30 @@
+{
+  "kind": "real-lake-cache-invalidation-regression",
+  "checks": [
+    {
+      "case": "cold",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.953,
+      "log": "verification/local/build-cache-cold.log"
+    },
+    {
+      "case": "warm",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.378,
+      "log": "verification/local/build-cache-warm.log"
+    },
+    {
+      "case": "stale-false-proof",
+      "status": "pass",
+      "exit_code": 1,
+      "seconds": 0.594,
+      "log": "verification/local/build-cache-stale-false-proof.log"
+    }
+  ],
+  "status": "pass",
+  "temporary_products_removed": true,
+  "builder_sha256": "b1e576ba45a912d4099e4ac266a0323785b318d871729c34765445710aea35ba",
+  "lake_toolchain": "leanprover/lean4:v4.35.0-rc3"
+}

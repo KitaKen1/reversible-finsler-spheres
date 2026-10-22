@@ -1,0 +1,183 @@
+{
+  "kind": "exact-fc-target-incremental-comparator-check",
+  "target": "ReversibleFinslerSpheres.infinitely_many_prime_closed_geodesics",
+  "sandbox": false,
+  "clean_build": false,
+  "external_kernel": false,
+  "status": "fail",
+  "checks": [
+    {
+      "check": "generated-source-match",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 0.079,
+      "log": "verification/local/fc-target-generated-source-match.log",
+      "raw_log_sha256": "3c0b56cb73a4b8bda42e6d75b83e4b36491e8779b2e3ee36a7a7212935d774c2",
+      "log_sha256": "3c0b56cb73a4b8bda42e6d75b83e4b36491e8779b2e3ee36a7a7212935d774c2",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "lean-FCExactChallenge",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 4.101,
+      "log": "verification/local/fc-target-lean-FCExactChallenge.log",
+      "raw_log_sha256": "88c3a34b5fde5903fb75b9ec924a68da5031de40935bc9cb525378fb49f178ec",
+      "log_sha256": "4f8e1e5c131c3939a64f54e5ee572f056eab6c9f4d7651331eed2152a65e1f60",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "lean-FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.967,
+      "log": "verification/local/fc-target-lean-FCTargetDefinitions.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "lean-FCSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.891,
+      "log": "verification/local/fc-target-lean-FCSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "lean-FCExactSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.302,
+      "log": "verification/local/fc-target-lean-FCExactSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "lean-FCExactAudit",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.783,
+      "log": "verification/local/fc-target-lean-FCExactAudit.log",
+      "raw_log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+      "log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "leanWithoutComparator-FCTargetDefinitions",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 2.685,
+      "log": "verification/local/fc-target-leanWithoutComparator-FCTargetDefinitions.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "leanWithoutComparator-FCSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.608,
+      "log": "verification/local/fc-target-leanWithoutComparator-FCSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "leanWithoutComparator-FCExactSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 5.312,
+      "log": "verification/local/fc-target-leanWithoutComparator-FCExactSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "leanWithoutComparator-FCExactAudit",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 3.882,
+      "log": "verification/local/fc-target-leanWithoutComparator-FCExactAudit.log",
+      "raw_log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+      "log_sha256": "50c1523aa24d56e7cb47ce888720343f7c0be90d1b0a0099128e9235d461ba35",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "export-FCExactChallenge",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 25.24,
+      "log": "verification/local/fc-target-export-FCExactChallenge.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "export-FCExactSolution",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 94.284,
+      "log": "verification/local/fc-target-export-FCExactSolution.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "comparator-structure-and-axioms",
+      "status": "pass",
+      "exit_code": 0,
+      "seconds": 285.982,
+      "log": "verification/local/fc-target-comparator-structure-and-axioms.log",
+      "raw_log_sha256": "cc1db8bb7b6159c7148130fd2990864ea2e7bb7b961e51df500a4148541092fe",
+      "log_sha256": "cc1db8bb7b6159c7148130fd2990864ea2e7bb7b961e51df500a4148541092fe",
+      "log_normalization": "machine-specific path prefixes only"
+    },
+    {
+      "check": "comparator-builtin-kernel-replay",
+      "status": "timeout",
+      "exit_code": null,
+      "seconds": 600.095,
+      "log": "verification/local/fc-target-comparator-builtin-kernel-replay.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_normalization": "machine-specific path prefixes only"
+    }
+  ],
+  "started_utc": "2026-10-22T00:24:07Z",
+  "source_files_matched_per_variant": 2056,
+  "core_source_manifest_sha256": "ed034e9df2c7b4969b49aa64b5a0bbf0a50e3223c4af97de5f06b9ef38eaaba4",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "source_match_caveat": "Source hashes match; reused oleans are not a clean rebuild.",
+  "fc_source_sha256": "aef1b8bc5e007a1acdf47d9ee53ea8c43e20be4c816c201dddc901ce2b1ceeff",
+  "entry_sources_sha256": {
+    "lean/FCExactChallenge.lean": "f108e70a031b281373ef7b581726835bde36b79dbe63f28705b02dbba6558088",
+    "lean/FCExactSolution.lean": "8b6ef7f4cb3ba54ef6bbdeb3e0f7347df10635b80c5d521c1b29f99406bbc2fc",
+    "lean/FCExactAudit.lean": "688c6fdb9fdd7874afe22cc4c25d0cf930f36891d294ac3d262b1b86eb798f33",
+    "lean/FCTargetDefinitions.lean": "f1552a3d37275fab9c7952dd150877c3745babb4868be41677a0d591270906cb",
+    "lean/FCSolution.lean": "62a63d0e86483329403e9fdd660ce9686d57593ba332cb97bb4a65bdb32a6f92",
+    "lean/comparator-fc.json": "d1ea7d1e52db3c20b8ed1f43b364ea7028da9e1011e3ad4a45ae394e08677871",
+    "lean/comparator/CompareFCExports.lean": "49a97f19fee81abcf0dac2e85d4e7aeab0bdbaf77208975b22ba5bf803d4466a",
+    "scripts/generate-fc-target.py": "c838f39ba8325113df7d3ff2c6fcd7de954f1eff88c3c84d2be45d7696429ed0"
+  },
+  "comparator_commit": "fd5d5bcf14177b187f66d4502071268d877887c3",
+  "lean4export_commit": "66f1fb4bc256072069767fce52d39480e4524869",
+  "entry_compilation": {
+    "memory_limit_MiB": 4096,
+    "threads": 2,
+    "Elab.async": false,
+    "outputs": [
+      "olean",
+      "ilean",
+      "c"
+    ],
+    "lake_import_artifacts": true,
+    "host_platform_caveat": "macOS incremental dependencies; hosted Linux build is separate"
+  },
+  "error": "Check failed; see [publication]/verification/local/fc-target-comparator-builtin-kernel-replay.log",
+  "finished_utc": "2026-10-22T00:41:45Z",
+  "temporary_products_removed": true
+}

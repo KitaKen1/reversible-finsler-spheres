@@ -1,0 +1,10 @@
+{
+  "kind": "kernel-replay-wrapper-time-budget-extension",
+  "initial_seconds": 1200,
+  "effective_total_seconds": 3600,
+  "extended_after_seconds": 1150.044,
+  "reason": "Preserve the ongoing unmodified upstream native kernel check rather than restart it. Only its Python timeout monitor is paused.",
+  "started_utc": "2026-10-21T10:34:05Z",
+  "resume_reason": "extended time limit",
+  "finished_utc": "2026-10-21T11:42:25Z"
+}
